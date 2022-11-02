@@ -1,0 +1,5 @@
+public Variables class{
+  public static void main(String[] arg){
+    System.out.prinln("Hello!");
+  }
+}
