@@ -28,7 +28,7 @@ developing programs gradually by adding a few statements at a time.
 	European format:
 	Thursday 16 July 2015
  
- #Exercise 2.2
+ # Exercise 2.2
  
  The point of this exercise is to (1) use some of the arithmetic
 operators, and (2) start thinking about compound entities (like time of day)
