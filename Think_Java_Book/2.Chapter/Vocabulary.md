@@ -51,12 +51,12 @@
      compound expressions and statements.
      
      compile-time error: An error in the source code that makes it impossible
-     to compile. Also called a \syntax error".
+     to compile. Also called a syntax error".
      
      parse: To analyze the structure of a program; what the compiler does  rst.
      
      run-time error: An error in a program that makes it impossible to run to
-     completion. Also called an \exception".
+     completion. Also called an exception".
      
      logic error: An error in a program that makes it do something other than
      what the programmer intended.
