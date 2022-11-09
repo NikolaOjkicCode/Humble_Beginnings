@@ -2,7 +2,7 @@
 
 1.Create a java file and in it (in comments), answer these questions:
 
-	-In computer jargon, what's the dierence between a statement and a
+	-In computer jargon, what's the diference between a statement and a
 	comment?
 	-What does it mean to say that a program is portable?
 	-In common English, what does the word compile mean?
