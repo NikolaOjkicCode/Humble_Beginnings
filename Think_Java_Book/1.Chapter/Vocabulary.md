@@ -1,3 +1,4 @@
+# New vocabulary from this Chapter 
      problem solving: The process of formulating a problem,  nding a solution,
      and expressing the solution.
      
@@ -61,4 +62,4 @@
      as line ending, end of line (EOL), or line break.
      
      escape sequence: A sequence of code that represents a special character
-     when used inside a string.*/
+     when used inside a string.
