@@ -1,4 +1,2 @@
-# Learning the basics of programming
+# SAMPLE TEXT
 
-This repository is meant to house all my early programmes that i made 
-while learning to programm
