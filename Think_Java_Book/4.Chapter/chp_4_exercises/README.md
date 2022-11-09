@@ -15,7 +15,7 @@ multiple methods.
 
 	3. What happens if you invoke baffle(); at the end of the ping method?
 	(We will see why in the next chapter.)
-
+```java
 public static void zoop() {
 	baffle();
 	System.out.print("You wugga ");
@@ -37,3 +37,4 @@ public static void baffle() {
 public static void ping() {
 	System.out.println(".");
 }
+```
