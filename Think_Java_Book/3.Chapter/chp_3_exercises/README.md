@@ -49,6 +49,6 @@ Adding 1 yields a number between 1 and 100, including both.
 	4. Read the user input as an integer and display the result. Again, compile
 	and test.
 
-	5. Compute and display the dierence between the user's guess and the
+	5. Compute and display the diference between the user's guess and the
 	number that was generated.
 
