@@ -128,3 +128,17 @@ public static void main(String[] args) {
 	4. Rewrite prod without the temporary variables recurse and result.
 	Hint: You only need one line for the else branch.
 
+# Exercise 6.6
+
+Write a recursive method named oddSum that takes a positive
+odd integer n and returns the sum of odd integers from 1 to n. Start with
+a base case, and use temporary variables to debug your solution. You might
+find it helpful to print the value of n each time oddSum is invoked.
+
+# Exercise 6.7
+
+The goal of this exercise is to translate a recursive definition
+into a Java method. The Ackermann function is defined for non-negative
+integers as follows:
+	
+	$$A(m; n) = 
