@@ -21,7 +21,9 @@ public static void loop(int n) {
 }
 ```
 
-  What is the output of this program?
+    What is the output of this program?
   
   
  # Exercise 7.2
+ 
+ $\sqrt{3x-1}+(1+x)^2$
