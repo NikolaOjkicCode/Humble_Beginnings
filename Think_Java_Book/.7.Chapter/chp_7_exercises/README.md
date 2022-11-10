@@ -65,7 +65,7 @@ $e^x=1+x+x^2/2!+x^3/3!+x^4/4!+...$
 The ith term in the series is $x^i/i!$ .
 
     1. Write a method called myexp that takes x and n as parameters and
-    estimates $e^x$ by adding the first n terms of this series. You can use the
+    estimates e^x by adding the first n terms of this series. You can use the
     factorial method from Section 6.7 or your iterative version from the
     previous exercise.
 
