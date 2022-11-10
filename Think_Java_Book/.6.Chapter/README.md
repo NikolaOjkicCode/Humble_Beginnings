@@ -78,7 +78,7 @@ Many mathematical functions are de ned recursively, because that is often the
               0! = 1
               n! = n   (n - 1)!
   
-  This de nition says that factorial(0) is
+  This definition says that factorial(0) is
   1, and that factorial(n) is n * factorial(n - 1).
   
   So factorial(3) is 3 * factorial(2); 
