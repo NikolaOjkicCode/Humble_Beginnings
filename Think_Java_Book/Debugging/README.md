@@ -1,2 +1,2 @@
 # Debugging
-## Important notes from this chapter of the book!
+## Important notes and pices of code,from this chapter of the book!
