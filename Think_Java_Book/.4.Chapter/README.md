@@ -1,6 +1,6 @@
 # Void methods
 
-     Method names should begin with a lowercase letter and use camel case",
+     Method names should begin with a lowercase letter and use camel case,
      which is a cute name for jammingWordsTogetherLikeThis. You can use any
      name you want for methods, except main or any of the Java keywords.
 
