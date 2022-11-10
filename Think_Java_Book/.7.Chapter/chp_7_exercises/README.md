@@ -62,11 +62,10 @@ One way to calculate $e^x$ is to use the infinite series expansion:
 
 $e^x=1+x+x^2/2!+x^3/3!+x^4/4!+...$
 
-The ith term in the series is $x^i/i!$ .
+The i-th term in the series is $x^i/i!$ .
 
     1. Write a method called myexp that takes x and n as parameters and
-    estimates e^x by adding the first n terms of this series. You can use the
-    factorial method from Section 6.7 or your iterative version from the
+    estimates e^x by adding the first n terms of this series. You can your iterative version from the
     previous exercise.
 
     2.You can make this method more eficient if you realize that the numerator
@@ -95,3 +94,8 @@ The ith term in the series is $x^i/i!$ .
 
     6. Add a loop in main that checks myexp with the values -0.1, -1.0, -10.0,
     and -100.0. Comment on the accuracy.
+    
+  # Exercise 7.6
+  
+  One way to evaluate exp( $-x^2$ ) is to use the infinite series
+  expansion:
