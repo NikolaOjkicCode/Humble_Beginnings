@@ -82,9 +82,13 @@ Many mathematical functions are de ned recursively, because that is often the
   1, and that factorial(n) is n * factorial(n - 1).
   
   So factorial(3) is 3 * factorial(2); 
+  
   factorial(2) is 2 * factorial(1);
+  
   factorial(1) is 1 * factorial(0); 
+  
   and factorial(0) is 1. Putting it all
+  
   together, we get 3 * 2 * 1 * 1, which is 6.
   
 ```java
