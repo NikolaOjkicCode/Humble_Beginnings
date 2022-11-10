@@ -30,7 +30,7 @@ public class VoidMethods{
     System.out.println(s);
   }
   
-  public static void printTime(int hour, int minute) {
+  public static void printTime(int hour, int minute) { //Method - when called prints 2 values "hour" and "minute" 
     System.out.print(hour);
     System.out.print(":");
     System.out.println(minute);
