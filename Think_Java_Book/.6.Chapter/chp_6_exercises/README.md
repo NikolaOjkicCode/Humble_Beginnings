@@ -151,3 +151,8 @@ putes and returns the value of the Ackermann function.
 Test your implementation of Ackermann by invoking it from main and display-
 ing the return value. Note the return value gets very big very quickly. You
 should try it only for small values of m and n (not bigger than 3).
+
+# Exercise 6.8
+
+Write a recursive method called power that takes a double x
+and an integer n and returns $x^n.
