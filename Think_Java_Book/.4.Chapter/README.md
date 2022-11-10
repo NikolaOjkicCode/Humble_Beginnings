@@ -1,5 +1,9 @@
 # Void methods
 
+     Method names should begin with a lowercase letter and use camel case",
+     which is a cute name for jammingWordsTogetherLikeThis. You can use any
+     name you want for methods, except main or any of the Java keywords.
+
 ```java
 public class VoidMethods{
   
@@ -70,9 +74,6 @@ public class VoidMethods{
     double j = Math.pow(2.0, 10.0);
     
     
-    /*Method names should begin with a lowercase letter and use \camel case",
-     which is a cute name for jammingWordsTogetherLikeThis. You can use any
-     name you want for methods, except main or any of the Java keywords.*/
     System.out.println("First line.");
     newLine();
     System.out.println("Second line.");
