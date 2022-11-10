@@ -95,8 +95,8 @@ public static int factorial(int n) {
     return result;
   }
 ````
-Since 3 is not zero, we take the second branch and calculate the
-   factorial of n - 1...
+    Since 3 is not zero, we take the second branch and calculate the
+    factorial of n - 1...
    
           Since 2 is not zero, we take the second branch and cal-
           culate the factorial of n - 1...
