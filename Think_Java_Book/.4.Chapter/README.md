@@ -3,21 +3,27 @@
      Method names should begin with a lowercase letter and use camel case,
      which is a cute name for jammingWordsTogetherLikeThis. You can use any
      name you want for methods, except main or any of the Java keywords.
+     
+     Callin a method is done in the "main" method:
+     
+ ```java
+ printTwice("Don't make me say this twice!");
+ ```
 
 ```java
 public class VoidMethods{
   
-  public static void newLine(){
+  public static void newLine(){   //Method - when called adds a new line
     System.out.println();
   }
   
-  public static void threeLine() {
+  public static void threeLine() { //Method - when called adds 3 new lines
     newLine();
     newLine();
     newLine();
   }
   
-  public static void printTwice(String s) {
+  public static void printTwice(String s) {  //Method - when called prints 2 times a string that was passed to the method with "String s" parameter
     System.out.println(s);
     System.out.println(s);
   }
