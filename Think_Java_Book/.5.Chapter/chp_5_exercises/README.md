@@ -110,7 +110,7 @@ public class Buzz {
 
 ```
 
-  1. Write the number 1 next to the first line of code in this program that
+  	1. Write the number 1 next to the first line of code in this program that
 	will execute.
 
 	2. Write the number 2 next to the second line of code, and so on until the
