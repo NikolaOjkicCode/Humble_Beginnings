@@ -1,7 +1,7 @@
 # Loops
 ## Important notes and pieces of code,from this chapter of the book!
 
-The while statement
+####The while statement
 
 ```java
 public static void countdown(int n) {
@@ -86,7 +86,7 @@ Scanner in = new Scanner(System.in);
     } while (!okay);
     double x = in.nextDouble();
 ```
-Although this code looks complicated, it is essentially only three steps:
+    Although this code looks complicated, it is essentially only three steps:
      
      1. Display a prompt.
      2. Check the input; if invalid, display an error and start over.
