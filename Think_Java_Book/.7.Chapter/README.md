@@ -1,7 +1,7 @@
 # Loops
 ## Important notes and pieces of code,from this chapter of the book!
 
-####The while statement
+The while statement
 
 ```java
 public static void countdown(int n) {
