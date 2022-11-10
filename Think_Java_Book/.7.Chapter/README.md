@@ -29,3 +29,20 @@ The for statement
        decrement operator; it has the same e ect as i = i - 1.
        If you want to increment or decrement a variable by an amount other than 1,
        you can use += and -=. For example, i += 2 increments i by 2.
+       
+The following loop displays a table with a sequence of values in the left column and their logarithms in the right column:
+
+```java
+    int i = 1;
+    while (i < 10) {
+      double x = i;
+      System.out.println(x + " " + Math.log(x));
+      i = i + 1;
+    }
+```
+
+Math.log computes natural logarithms, that is, logarithms base e. For com-
+puter science applications, we often want logarithms with respect to base 2.
+To compute them, we can apply this equation:
+
+$log_2 x = frac(log_e x)(log_e 2)$
