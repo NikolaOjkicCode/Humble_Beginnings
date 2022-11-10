@@ -1,5 +1,5 @@
 # The way of the program 
-## Important notes from this chapter of the book including pices of code
+## Important notes and pices of code,from this chapter of the book!
 
 Java programs are made up of class and method defnitions, and methods are
 made up of statements. A statement is a line of code that performs a basic
