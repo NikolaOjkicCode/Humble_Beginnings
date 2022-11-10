@@ -1,5 +1,5 @@
 # Input and Output
-
+## Important notes and pices of code,from this chapter of the book!
 ```java
 import java.util.Scanner;
 ```
