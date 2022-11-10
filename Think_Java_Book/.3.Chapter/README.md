@@ -36,14 +36,7 @@ public class InputAndOutput{
     /*The format specifier %d displays integer values (\d" stands for \decimal"). The
      values are matched up with the format speci ers in order, so inch is displayed
      using %d, and cm is displayed using %f.*/
-    
-    /*
-     %d decimal integer                                     12345
-     %08d padded with zeros, at least 8 digits wide         00012345
-     %f  oating-point                                       6.789000
-     %.2f rounded to 2 decimal places                       6.79
-     */
-    
+  
     inch = (int) (cm / CM_PER_INCH);
     /*The simplest way to convert a  oating-point value to an integer is to use a type
      cast, so called because it molds or \casts" a value from one type to another.*/
@@ -66,3 +59,9 @@ public class InputAndOutput{
   }
 }
 ```
+    
+     %d decimal integer                                     12345
+     %08d padded with zeros, at least 8 digits wide         00012345
+     %f  oating-point                                       6.789000
+     %.2f rounded to 2 decimal places                       6.79
+    
