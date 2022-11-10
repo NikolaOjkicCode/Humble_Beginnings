@@ -3,9 +3,9 @@
 ```java
 import java.util.Scanner;
 ```
-   This import statement tells the compiler that when you say Scanner, you
-   mean the one de ned in java.util. It's necessary because there might be
-   another class named Scanner in another package.
+      This import statement tells the compiler that when you say Scanner, you
+      mean the one de ned in java.util. It's necessary because there might be
+      another class named Scanner in another package.
    
 ```java
 public class InputAndOutput{
