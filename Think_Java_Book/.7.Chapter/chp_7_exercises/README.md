@@ -33,7 +33,7 @@ answer,  $x_0$, and then improve the guess using this formula:
   $x_1 = (x_0 + a/x_0)/2$
   
 For example, if we want to find the square root of 9, and we start with $x_0=6$,
-then $$x_1 = (6+9/6)/2=3.75$ which is closer. We can repeat the procedure,
+then $x_1 = (6+9/6)/2=3.75$ which is closer. We can repeat the procedure,
 using $x_1$ to calculate $x_2$,and so on. In this case, $x_2=3.075$ and $x_3=3.00091$.
 So it converges quickly on the correct answer.
 
