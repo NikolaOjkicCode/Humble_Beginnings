@@ -4,7 +4,7 @@ Java programs are made up of class and method defnitions, and methods are
 made up of statements. A statement is a line of code that performs a basic
 operation.
 
-A class is a collection of methods.The name of the class has to match the name of the  le it is in,
+A class is a collection of methods.The name of the class has to match the name of the  file it is in,
 so this class has to be in a  le named Hello.java.
 
 ```java
@@ -48,6 +48,9 @@ so this class has to be in a  le named Hello.java.
 ```
 
 \n - newline
+
 \t - tab
+
 \" - double quote
+
 \\ - backslash
