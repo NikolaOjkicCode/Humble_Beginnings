@@ -52,35 +52,79 @@ What is the output of the following program?
 
 ``` java
 public static void main(String[] args) {
-boolean flag1 = isHoopy(202);
-boolean flag2 = isFrabjuous(202);
-System.out.println(flag1);
-System.out.println(flag2);
-if (flag1 && flag2) {
-System.out.println("ping!");
-}
-if (flag1 || flag2) {
-System.out.println("pong!");
-}
+	boolean flag1 = isHoopy(202);
+	boolean flag2 = isFrabjuous(202);
+	System.out.println(flag1);
+	System.out.println(flag2);
+	
+	if (flag1 && flag2) {
+		System.out.println("ping!");
+	}
+	
+	if (flag1 || flag2) {
+		System.out.println("pong!");
+	}
 }
 
 public static boolean isHoopy(int x) {
-boolean hoopyFlag;
-if (x % 2 == 0) {
-hoopyFlag = true;
-} else {
-hoopyFlag = false;
+	boolean hoopyFlag;
+	
+	if (x % 2 == 0) {
+		hoopyFlag = true;
+	} else {
+		hoopyFlag = false;
+	}
+	
+	return hoopyFlag;
 }
-return hoopyFlag;
-}
+
 public static boolean isFrabjuous(int x) {
-boolean frabjuousFlag;
-if (x > 0) {
-frabjuousFlag = true;
-} else {
-frabjuousFlag = false;
-}
-return frabjuousFlag;
+	boolean frabjuousFlag;
+	
+	if (x > 0) {
+		frabjuousFlag = true;
+	} else {
+		frabjuousFlag = false;
+	}
+	
+	return frabjuousFlag;
 }
 ```
+The purpose of this exercise is to make sure you understand logical operators
+and the flow of execution through value methods.
+
+# Exercise 6.5
+
+In this exercise, you will use a stack diagram to understand
+the execution of the following recursive program.
+
+```java
+public static void main(String[] args) {
+
+	System.out.println(prod(1, 4));
+}
+
+	public static int prod(int m, int n) {
+	
+		if (m == n) {
+			return n;
+		} else {
+			int recurse = prod(m, n - 1);
+			int result = n * recurse;
+			return result;
+		}
+}
+```
+
+	1. Draw a stack diagram showing the state of the program just before the
+	last invocation of prod completes.
+	
+	2. What is the output of this program? (Try to answer this question on
+	paper frst, then run the code to check your answer.)
+	
+	3. Explain in a few words what prod does (without getting into the details
+	of how it works).
+	
+	4. Rewrite prod without the temporary variables recurse and result.
+	Hint: You only need one line for the else branch.
 
