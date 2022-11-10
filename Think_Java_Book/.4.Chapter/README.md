@@ -4,11 +4,13 @@
      which is a cute name for jammingWordsTogetherLikeThis. You can use any
      name you want for methods, except main or any of the Java keywords.
      
-     Callin a method is done in the "main" method:
+     Calling a method is done in the "main" method:
      
  ```java
  printTwice("Don't make me say this twice!");
  ```
+ 
+ Exaples:
 
 ```java
 public class VoidMethods{
