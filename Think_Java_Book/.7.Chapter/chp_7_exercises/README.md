@@ -44,3 +44,9 @@ should not use Math.sqrt.
 As your initial guess, you should use a=2. Your method should iterate until
 it gets two consecutive estimates that difer by less than 0.0001. You can use
 Math.abs to calculate the absolute value of the diference.
+
+# Exercise 7.3
+
+In Exercise 6.9 we wrote a recursive version of power, which
+takes a double x and an integer n and returns $x^n$ . Now write an iterative
+method to perform the same calculation.
