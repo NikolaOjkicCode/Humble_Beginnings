@@ -45,4 +45,4 @@ Math.log computes natural logarithms, that is, logarithms base e. For com-
 puter science applications, we often want logarithms with respect to base 2.
 To compute them, we can apply this equation:
 
-$log_2 x = \frac(log_e x)(log_e 2)$
+$log_2 x = (log_e x)/(log_e 2)$
