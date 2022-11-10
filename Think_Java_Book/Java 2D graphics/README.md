@@ -1,1 +1,2 @@
-# SAMPLE TEXT
+# Java 2D graphics
+##
