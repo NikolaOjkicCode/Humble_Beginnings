@@ -99,3 +99,5 @@ The i-th term in the series is $x^i/i!$ .
   
   One way to evaluate exp( $-x^2$ ) is to use the infinite series
   expansion:
+  
+  $exp(-x^2)=1-x^2+x^4/2-x^6/6+...$
