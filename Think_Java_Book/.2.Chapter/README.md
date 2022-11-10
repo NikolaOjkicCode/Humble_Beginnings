@@ -81,7 +81,7 @@ public class VariablesAndOperators{
     
     /*The output is:  Fraction of the hour that has passed: 0
      This result often confuses people. The value of minute is 59, and 59 divided
-     by 60 should be 0.98333, not 0. The problem is that Java performs \integer
+     by 60 should be 0.98333, not 0. The problem is that Java performs integer
      division" when the operands are integers. By design, integer division always
      rounds toward zero, even in cases like this one where the next integer is close.
      */
@@ -94,7 +94,7 @@ public class VariablesAndOperators{
     double pi;
     pi = 3.14159;
     
-    /*Java performs \ oating-point division" when one or more operands are double
+    /*Java performs floating-point division" when one or more operands are double
      values. So we can solve the problem we saw in the previous section:*/
      
     double minute2 = 59.0;
