@@ -50,8 +50,7 @@ that are represented with multiple values.
 	consider using 
 	floating-point.
 
-	6. Change the values of hour, minute, and second to re-
-	ect the current
+	6. Change the values of hour, minute, and second to reflect the current
 	time. Then write code to compute the elapsed time since you started
 	working on this exercise.
 
