@@ -7,7 +7,7 @@ developing programs gradually by adding a few statements at a time.
 	1. Create a new program named Date.java. Copy or type in something
 	like the hello world program and make sure you can compile and run it.
 
-	2. Following the example in Section 2.4, write a program that creates vari-
+	2. Write a program that creates vari-
 	ables named day, date, month, and year. The variable day will contain
 	the day of the week (like Friday), and date will contain the day of the
 	month (like the 13th). What type is each variable? Assign values to
