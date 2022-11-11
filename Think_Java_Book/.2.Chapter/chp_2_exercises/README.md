@@ -36,7 +36,7 @@ that are represented with multiple values.
 
 	1. Create a new program called Exercise 2_2.
 
-	2. Following the example program in Section 2.4, create variables named
+	2. Create variables named
 	hour, minute, and second. Assign values that are roughly the current
 	time. Use a 24-hour clock so that at 2pm the value of hour is 14.
 
