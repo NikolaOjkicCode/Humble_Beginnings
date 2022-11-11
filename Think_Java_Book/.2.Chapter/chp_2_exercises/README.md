@@ -4,7 +4,7 @@ The point of this exercise is (1) to use string concatenation
 to display values with diferent types (int and String), and (2) to practice
 developing programs gradually by adding a few statements at a time.
 
-	1. Create a new program named Date.java. Copy or type in something
+	1. Create a new program named Exercise 2_1. Copy or type in something
 	like the hello world program and make sure you can compile and run it.
 
 	2. Write a program that creates vari-
@@ -34,8 +34,7 @@ developing programs gradually by adding a few statements at a time.
 operators, and (2) start thinking about compound entities (like time of day)
 that are represented with multiple values.
 
-	1. Create a new program called Time.java. From now on, we won't remind
-	you to start with a small, working program, but you should.
+	1. Create a new program called Exercise 2_2.
 
 	2. Following the example program in Section 2.4, create variables named
 	hour, minute, and second. Assign values that are roughly the current
