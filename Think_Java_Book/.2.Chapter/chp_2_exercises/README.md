@@ -48,7 +48,7 @@ that are represented with multiple values.
 	5. Calculate and display the percentage of the day that has passed. You
 	might run into problems when computing percentages with integers, so
 	consider using 
-	oating-point.
+	floating-point.
 
 	6. Change the values of hour, minute, and second to re-
 	ect the current
