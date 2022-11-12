@@ -1,12 +1,5 @@
 # Exercise 3.1
 
-When you use printf, the Java compiler does not check your
-format string. See what happens if you try to display a value with type int
-using %f. And what happens if you display a double using %d? What if you
-use two format specifiers, but then only provide one value?
-
-# Exercise 3.2
-
 Write a program that converts a temperature from Celsius to
 Fahrenheit. It should (1) prompt the user for input, (2) read a double value
 from the keyboard, (3) calculate the result, and (4) format the output to one
@@ -16,7 +9,7 @@ Here is the formula. Be careful not to use integer division!
 F = C * (9/5) + 32
 Hint: Use the modulus operator.
 
-# Exercise 3.3
+# Exercise 3.2
 
 The goal of this exercise is to program a Guess My Number"
 game. When it's finished, it will work like this:
