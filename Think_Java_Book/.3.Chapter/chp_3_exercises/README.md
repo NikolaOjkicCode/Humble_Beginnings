@@ -7,6 +7,8 @@ decimal place. For example, it should display "24.0 C = 75.2 F".
 Here is the formula. Be careful not to use integer division!
 
 F = C * (9/5) + 32
+
+Use "printf" to display your resaults!
 Hint: Use the modulus operator.
 
 # Exercise 3.2
@@ -45,3 +47,4 @@ Adding 1 yields a number between 1 and 100, including both.
 	5. Compute and display the diference between the user's guess and the
 	number that was generated.
 
+Use "printf" to display your resaults!
