@@ -17,10 +17,7 @@ if (x > 0) {
 
 For the following program:
 
-	1. Draw a stack diagram that shows the state of the program the second
-	time zoop is invoked.
-	
-	2. What is the complete output?
+	 What is the complete output?
 
 ```java
 public static void zoop(String fred, int bob) {
