@@ -24,6 +24,11 @@ game. When it's finished, it will work like this:
 
 To choose a random number, you can use the Random class in java.util.
 
+```java
+ 	Random random = new Random();
+      	int answer = random.nextInt(100) + 1;
+```
+
 Like the Scanner class we saw in this chapter, Random has to be imported
 before we can use it. And as we saw with Scanner, we have to use the new
 operator to create a Random (number generator).
