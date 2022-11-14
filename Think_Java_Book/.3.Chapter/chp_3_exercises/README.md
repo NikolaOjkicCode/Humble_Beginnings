@@ -37,9 +37,8 @@ Then we can use the method nextInt to generate a random number. In this
 example, the result of nextInt(100) will be between 0 and 99, including both.
 Adding 1 yields a number between 1 and 100, including both.
 
-	1. The definition of GuessStarter is in a file called GuessStarter.java,
-	in the directory called ch03, in the repository for this book.
-
+	1. Make a basic "guessing the number" program
+	
 	2. Compile and run this program.
 
 	3. Modify the program to prompt the user, then use a Scanner to read a
