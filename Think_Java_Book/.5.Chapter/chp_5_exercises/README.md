@@ -50,7 +50,7 @@ public static void ping(String strangStrung) {
 # Exercise 5.3
 
 Fermat's Last Theorem says that there are no integers a, b,
-and c such that $a^n + b^n = c^n, except when n <= 2.
+and c such that $$a^n + b^n = c^n, except when n <= 2.
 Write a method named checkFermat that takes four integers as parameters 
 a, b, c and n  and checks to see if Fermat's theorem holds. If n is greater
 than 2 and $a^n + b^n = c^n, the program should display Holy smokes, Fermat
