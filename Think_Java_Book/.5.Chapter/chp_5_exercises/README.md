@@ -125,14 +125,12 @@ public class Buzz {
   
 # Exercise 5.6
 
-Now that we have conditional statements, we can get back to
-the "Guess My Number" game from Exercise 3.3.
 
 You should already have a program that chooses a random number, prompts
 the user to guess it, and displays the diference between the guess and the
 chosen number.
 
-Adding a small amount of code at a time, and testing as you go, modify the
+Adding a small amount of code at a time, and testing as you go, make a
 program so it tells the user whether the guess is too high or too low, and then
 prompts the user for another guess.
 
