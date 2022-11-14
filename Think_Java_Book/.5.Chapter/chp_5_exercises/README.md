@@ -85,7 +85,7 @@ As you develop your code, test it with a small number of verses, like 3.
 
 # Exercise 5.5
 
-This exercise reviews the fow of execution through a program
+This exercise reviews the flow of execution through a program
 with multiple methods. Read the following code and answer the questions.
 
 ```java
