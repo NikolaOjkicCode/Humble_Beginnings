@@ -38,16 +38,10 @@ example, the result of nextInt(100) will be between 0 and 99, including both.
 Adding 1 yields a number between 1 and 100, including both.
 
 	1. Make a basic "guessing the number" program
-	
+
 	2. Compile and run this program.
 
-	3. Modify the program to prompt the user, then use a Scanner to read a
-	line of user input. Compile and test the program.
-
-	4. Read the user input as an integer and display the result. Again, compile
-	and test.
-
-	5. Compute and display the diference between the user's guess and the
+	3. Compute and display the diference between the user's guess and the
 	number that was generated.
 
 Use "printf" to display your resaults!
