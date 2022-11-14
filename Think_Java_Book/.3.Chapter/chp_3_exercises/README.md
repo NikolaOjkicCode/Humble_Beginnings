@@ -9,7 +9,6 @@ Here is the formula. Be careful not to use integer division!
 F = C * (9/5) + 32
 
 Use "printf" to display your resaults!
-Hint: Use the modulus operator.
 
 # Exercise 3.2
 
