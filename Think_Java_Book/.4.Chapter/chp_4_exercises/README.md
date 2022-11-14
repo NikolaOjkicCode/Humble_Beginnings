@@ -10,11 +10,8 @@ multiple methods.
 	Hint: Start by describing in words what ping and baffle do when they
 	are invoked.
 
-	2. Draw a stack diagram that shows the state of the program the first time
-	ping is invoked.
-
-	3. What happens if you invoke baffle(); at the end of the ping method?
-	(We will see why in the next chapter.)
+	2. What happens if you invoke baffle(); at the end of the ping method?
+	
 ```java
 public static void zoop() {
 	baffle();
