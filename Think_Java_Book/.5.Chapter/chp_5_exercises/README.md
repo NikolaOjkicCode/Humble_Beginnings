@@ -134,5 +134,6 @@ Adding a small amount of code at a time, and testing as you go, make a
 program so it tells the user whether the guess is too high or too low, and then
 prompts the user for another guess.
 
-The program should continue until the user gets it right. Hint: Use two
-methods, and make one of them recursive.
+The program should continue until the user gets it right. 
+
+Hint: Use two methods, and make one of them recursive.
