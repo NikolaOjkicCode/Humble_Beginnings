@@ -122,7 +122,7 @@ public static int factorial(int n) {
     The return value (2) gets multiplied by n, which is 3, and the result,
     6, is returned to whatever invoked factorial(3).
     
- Another common recursively-de ned mathematical function is the Fibonacci
+ Another common recursively-defened mathematical function is the Fibonacci
    sequence, which has the following de nition:
    
           fibonacci(1) = 1
