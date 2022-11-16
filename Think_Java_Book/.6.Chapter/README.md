@@ -123,7 +123,7 @@ public static int factorial(int n) {
     6, is returned to whatever invoked factorial(3).
     
  Another common recursively-defened mathematical function is the Fibonacci
-   sequence, which has the following de nition:
+   sequence, which has the following definition:
    
           fibonacci(1) = 1
           fibonacci(2) = 1
