@@ -154,7 +154,7 @@ should try it only for small values of m and n (not bigger than 3).
 Write a recursive method called power that takes a double x
 and an integer n and returns x^n.
 
-Hint: A recursive definition of this operation is xn = x * x^n-1. Also, remember
+Hint: A recursive definition of this operation is x^n = x * x^n-1. Also, remember
 that anything raised to the zeroth power is 1.
 
 Optional challenge: you can make this method more eficient, when n is even,
