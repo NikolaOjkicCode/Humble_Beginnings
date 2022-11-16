@@ -47,7 +47,7 @@ Math.abs to calculate the absolute value of the diference.
 
 # Exercise 7.3
 
-In Exercise 6.9 we wrote a recursive version of power, which
+In Exercise 6.8 we wrote a recursive version of power, which
 takes a double x and an integer n and returns $x^n$ . Now write an iterative
 method to perform the same calculation.
 
