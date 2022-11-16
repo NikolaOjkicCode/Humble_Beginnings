@@ -95,8 +95,6 @@ and the flow of execution through value methods.
 
 # Exercise 6.5
 
-In this exercise, you will use a stack diagram to understand
-the execution of the following recursive program.
 
 ```java
 public static void main(String[] args) {
@@ -116,16 +114,15 @@ public static void main(String[] args) {
 }
 ```
 
-	1. Draw a stack diagram showing the state of the program just before the
-	last invocation of prod completes.
 	
-	2. What is the output of this program? (Try to answer this question on
-	paper frst, then run the code to check your answer.)
+	1. What is the output of this program? (Try to answer this question in a
+	comment frst, then run the code to check your answer.)
 	
-	3. Explain in a few words what prod does (without getting into the details
+	2. Explain in a few words what prod does (without getting into the details
 	of how it works).
 	
-	4. Rewrite prod without the temporary variables recurse and result.
+	3. Rewrite prod without the temporary variables recurse and result.
+	
 	Hint: You only need one line for the else branch.
 
 # Exercise 6.6
