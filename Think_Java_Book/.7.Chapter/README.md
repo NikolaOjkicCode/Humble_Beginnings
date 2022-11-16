@@ -30,43 +30,6 @@ The for statement
        If you want to increment or decrement a variable by an amount other than 1,
        you can use += and -=. For example, i += 2 increments i by 2.
        
-The following loop displays a table with a sequence of values in the left column and their logarithms in the right column:
-
-```java
-    int i = 1;
-    while (i < 10) {
-      double x = i;
-      System.out.println(x + " " + Math.log(x));
-      i = i + 1;
-    }
-```
-
-Math.log computes natural logarithms, that is, logarithms base e. For com-
-puter science applications, we often want logarithms with respect to base 2.
-To compute them, we can apply this equation:
-
-$log_2 x = (log_e x)/(log_e 2)$
-
-```java
-int i2 = 1;
-    while (i2 < 10) {
-      double x = i2;
-      System.out.println(x + " " + Math.log(x) / Math.log(2));
-      i2 = i2 + 1;
-    }
-    System.out.println();
-    
-    /*Each time through the loop, we add one to x, so the result is an arithmetic
-     sequence. If we multiply x by something instead, we get a geometric sequence:*/
-    
-    final double LOG2 = Math.log(2);
-    int i3 = 1;
-    while (i3 < 100) {
-      double x = i3;
-      System.out.println(x + " " + Math.log(x) / LOG2);
-      i3 = i3 * 2;
-    }
-```
 
 Java also provides a posttest loop: the do-while statement. 
 This type of loop is useful when you need to run the body of the loop at least once.
