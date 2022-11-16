@@ -26,7 +26,7 @@ multadd" operation, which takes three operands and computes a * b + c.
 Some processors even provide a hardware implementation of this operation for
 floating-point numbers.
 
-	1. Create a new program called Multadd.java.
+	1. Create a new program called Exercise6_3.java.
 
 	2. Write a method called multadd that takes three doubles as parameters
 	and that returns a * b + c.
