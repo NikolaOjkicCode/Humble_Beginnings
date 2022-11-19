@@ -24,6 +24,6 @@ line of code:
   double[] values = new double[size];
 ```
 
-The [] operator selects elements from an array:
+The [ ] operator selects elements from an array:
 
 
