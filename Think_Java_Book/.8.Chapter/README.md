@@ -24,7 +24,7 @@ line of code:
   int[] counts = new int[4];
   double[] values = new double[size];
 ```
-### __Accessing elements__
+### *Accessing elements*
 
 The [ ] operator selects elements from an array:
 
