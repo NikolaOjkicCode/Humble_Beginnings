@@ -127,3 +127,24 @@ But it doesn't copy the array itself! For example:
 ```
     The second parameter is the number of elements you want to copy, so you can
     also use copyOf to copy just part of an array.
+    
+The examples in the previous section only work if the array has three elements.
+It would be better to generalize the code to work with arrays of any size. We
+can do that by replacing the magic number, 3, with a.length:
+
+```java
+  double[] b = new double[a.length];
+   for (int i = 0; i < a.length; i++) {
+      b[i] = a[i];
+   }
+```
+    All arrays have a built-in constant, length, that stores the number of elements.
+    The expression a.length may look like a method invocation, but there are no
+    parentheses and no arguments.
+    
+You can also use a.length with Arrays.copyOf:
+
+```java
+  double[] b = Arrays.copyOf(a, a.length);
+```
+
