@@ -102,15 +102,15 @@ But it doesn't copy the array itself! For example:
   double[] b = a;
 ```
 
-These statements create an array of three doubles and make two diferent
-variables refer to it.
-Any changes made through either variable will be seen by the other. For
-example, if we set a[0] = 17.0, and then display b[0], the result is 17.0.
-Because a and b are diferent names for the same thing, they are sometimes
-called aliases.
+    These statements create an array of three doubles and make two diferent
+    variables refer to it.
+    Any changes made through either variable will be seen by the other. For
+    example, if we set a[0] = 17.0, and then display b[0], the result is 17.0.
+    Because a and b are diferent names for the same thing, they are sometimes
+    called aliases.
 
-If you actually want to copy the array, not just a reference, you have to create
-a new array and copy the elements from the old to the new, like this:
+    If you actually want to copy the array, not just a reference, you have to create
+    a new array and copy the elements from the old to the new, like this:
 
 ```java
   double[] b = new double[3];
@@ -119,11 +119,11 @@ a new array and copy the elements from the old to the new, like this:
   }
 ```
 
-Another option is to use java.util.Arrays, which provides a method named
-copyOf that copies an array. You can invoke it like this:
+    Another option is to use java.util.Arrays, which provides a method named
+    copyOf that copies an array. You can invoke it like this:
 
 ```java
   double[] b = Arrays.copyOf(a, 3);
 ```
-The second parameter is the number of elements you want to copy, so you can
-also use copyOf to copy just part of an array.
+    The second parameter is the number of elements you want to copy, so you can
+    also use copyOf to copy just part of an array.
