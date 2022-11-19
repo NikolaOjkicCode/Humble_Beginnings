@@ -54,6 +54,7 @@ ith element. This type of array processing is often written using a for loop.
     For the counts array, the only legal indexes are 0, 1, 2, and 3. If the index is
     negative or greater than 3, the result is an ArrayIndexOutOfBoundsException.
 
+### *Displaying arrays*
 
 Unfortunately, the output of this code:
 
@@ -95,6 +96,8 @@ representation of an array. We can invoke it like this:
 
     [1, 2, 3, 4]
 
+### *Copying arrays*
+
 Array variables contain references to arrays. When
 you make an assignment to an array variable, it simply copies the reference.
 But it doesn't copy the array itself! For example:
@@ -130,6 +133,7 @@ But it doesn't copy the array itself! For example:
     The second parameter is the number of elements you want to copy, so you can
     also use copyOf to copy just part of an array.
     
+### *Array length* 
 The examples in the previous section only work if the array has three elements.
 It would be better to generalize the code to work with arrays of any size. We
 can do that by replacing the magic number, 3, with a.length:
@@ -150,3 +154,4 @@ You can also use a.length with Arrays.copyOf:
   double[] b = Arrays.copyOf(a, a.length);
 ```
 
+### *Array traversal*
