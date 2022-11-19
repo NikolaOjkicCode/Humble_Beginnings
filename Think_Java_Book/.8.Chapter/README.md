@@ -1,7 +1,7 @@
 # Arrays
 ## Important notes and pieces of code,from this chapter of the book!
 
-### **Creating arrays**
+### *Creating arrays*
 An array is a sequence of values; the values in the array are called elements.
 You can make an array of ints, doubles, or any other type, but all the values
 in an array must have the same type.
