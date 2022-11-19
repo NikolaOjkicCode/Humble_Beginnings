@@ -24,7 +24,7 @@ line of code:
   double[] values = new double[size];
 ```
 
-The [ ] operator selects elements from an array:
+    The [ ] operator selects elements from an array:
 
 ```java
   System.out.println("The zeroth element is " + counts[0]);
@@ -59,13 +59,13 @@ Unfortunately, the output of this code:
   int[] a = {1, 2, 3, 4};
   System.out.println(a);
 ```
-Is something like this:
+    Is something like this:
 
         [I@bf3f7e0
 
-The bracket indicates that the value is an array, I stands for \integer", and
-the rest represents the address of the array. If we want to display the elements
-of the array, we can do it ourselves:
+    The bracket indicates that the value is an array, I stands for \integer", and
+    the rest represents the address of the array. If we want to display the elements
+    of the array, we can do it ourselves:
 
 ```java
   public static void printArray(int[] a) {
@@ -77,7 +77,7 @@ of the array, we can do it ourselves:
   }
 ```
 
-Given the previous array, the output of this method is:
+    Given the previous array, the output of this method is:
 
           {1, 2, 3, 4}
 
@@ -89,7 +89,7 @@ representation of an array. We can invoke it like this:
   System.out.println(Arrays.toString(a));
 ```
 
-And the output is:
+    And the output is:
 
     [1, 2, 3, 4]
 
