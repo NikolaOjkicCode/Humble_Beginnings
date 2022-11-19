@@ -23,3 +23,7 @@ line of code:
   int[] counts = new int[4];
   double[] values = new double[size];
 ```
+
+The [] operator selects elements from an array:
+
+
