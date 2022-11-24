@@ -55,3 +55,7 @@ counts[score]++;
       that takes an int array of scores from 0 to (but not including) 100, and
       returns a histogram of 100 counters. Generalize it to take the number of
       counters as an argument.
+      
+ # Exercise 8.2
+ 
+ 
