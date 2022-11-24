@@ -59,3 +59,95 @@ corresponding character.
 
 
 ### *Strings are immutable*
+
+Strings provide methods, toUpperCase and toLowerCase, that convert from
+uppercase to lowercase and back. These methods are often a source of confu-
+sion, because it sounds like they modify strings. But neither these methods
+nor any others can change a string, because strings are immutable.
+
+When you invoke toUpperCase on a string, you get a new string object as a
+return value. For example:
+
+```java
+String name = "Alan Turing";
+String upperName = name.toUpperCase();
+```
+After these statements run, upperName refers to the string "ALAN TURING".
+But name still refers to "Alan Turing".
+
+Another useful method is replace, which finds and replaces instances of one
+string within another. This example replaces "Computer Science" with "CS":
+
+```java
+String text = "Computer Science is fun!";
+text = text.replace("Computer Science", "CS");
+```
+
+This example demonstrates a common way to work with string methods. It in-
+vokes text.replace, which returns a reference to a new string, "CS is fun!".
+Then it assigns the new string to text, replacing the old string.
+This assignment is important; 
+
+if you don't save the return value, invoking
+text.replace has no efect.
+
+### *String traversal*
+
+The following loop traverses the characters in fruit and displays them, one
+on each line:
+
+```java
+for (int i = 0; i < fruit.length(); i++) {
+  char letter = fruit.charAt(i);
+  System.out.println(letter);
+}
+```
+
+The condition is i < fruit.length(), which means that when i is equal to
+the length of the string, the condition is false and the loop terminates.
+
+Unfortunately, the enhanced for loop does not work with strings. But you
+can convert any string to a character array and iterate that:
+
+```java
+for (char letter : fruit.toCharArray()) {
+System.out.println(letter);
+}
+```
+
+To find the last letter of a string, you might be tempted to try something like:
+
+```java
+int length = fruit.length();
+char last = fruit.charAt(length); // wrong!
+```
+
+This code compiles and runs, but invoking the charAt method throws a
+StringIndexOutOfBoundsException. The problem is that there is no sixth
+letter in "banana". Since we started counting at 0, the 6 letters are indexed
+from 0 to 5. To get the last character, you have to subtract 1 from length.
+
+```java
+int length = fruit.length();
+char last = fruit.charAt(length - 1); // correct
+```
+
+Many string traversals involve reading one string and creating another. For
+example, to reverse a string, we simply add one character at a time:
+
+```java
+public static String reverse(String s) {
+String r = "";
+for (int i = s.length() - 1; i >= 0; i--) {
+r = r + s.charAt(i);
+}
+return r;
+}
+```
+
+The initial value of r is "", which is the empty string. The loop traverses
+the letters of s in reverse order. Each time through the loop, it creates a new
+string and assigns it to r. When the loop exits, r contains the letters from s
+in reverse order. So the result of reverse("banana") is "ananab".
+
+### *Substrings*
