@@ -11,3 +11,5 @@
 [Java library](http://docs.oracle.com/javase/8/docs/api/)
 
 [Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+
+[Unicode](https://home.unicode.org/)
