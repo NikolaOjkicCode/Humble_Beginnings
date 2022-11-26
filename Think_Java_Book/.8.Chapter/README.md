@@ -25,6 +25,7 @@ line of code:
   int[] counts = new int[4];
   double[] values = new double[size];
 ```
+___
 ### *Accessing elements*
 
 The [ ] operator selects elements from an array:
@@ -55,6 +56,7 @@ ith element. This type of array processing is often written using a for loop.
     For the counts array, the only legal indexes are 0, 1, 2, and 3. If the index is
     negative or greater than 3, the result is an ArrayIndexOutOfBoundsException.
 
+___
 ### *Displaying arrays*
 
 Unfortunately, the output of this code:
@@ -97,6 +99,7 @@ representation of an array. We can invoke it like this:
 
     [1, 2, 3, 4]
 
+___
 ### *Copying arrays*
 
 Array variables contain references to arrays. When
@@ -133,7 +136,8 @@ But it doesn't copy the array itself! For example:
 ```
     The second parameter is the number of elements you want to copy, so you can
     also use copyOf to copy just part of an array.
-    
+
+___
 ### *Array length* 
 The examples in the previous section only work if the array has three elements.
 It would be better to generalize the code to work with arrays of any size. We
@@ -155,6 +159,7 @@ You can also use a.length with Arrays.copyOf:
   double[] b = Arrays.copyOf(a, a.length);
 ```
 
+___
 ### *Array traversal*
 
 Many computations can be implemented by looping through the elements of
@@ -199,7 +204,7 @@ double array and returns the sum of the elements:
 }
 
 ```
-
+___
 ### *Random numbers*
 
 The following method creates an int array and fills it with random numbers
@@ -231,6 +236,7 @@ The output looks like this:
     
     If you run it, you will probably get diferent values.
 
+___
 ### *Traverse and count*
 
 The following method takes an array and two integers, low and high. It
@@ -262,6 +268,7 @@ int d = inRange(scores, 60, 70);
 int f = inRange(scores, 0, 60);
 ```
 
+___
 ### *Building a histogram*
 
 The following fragment creates an array of 100 counters, one for each possible
@@ -293,6 +300,7 @@ Each time through the loop, it selects one element from scores and uses it
 as an index to increment the corresponding element of counts. Because this
 code only traverses the array of scores once, it is much more eficient.
 
+___
 ### *The enhanced for loop*
 
 Since traversing arrays is so common, Java provides an alternative syntax that
