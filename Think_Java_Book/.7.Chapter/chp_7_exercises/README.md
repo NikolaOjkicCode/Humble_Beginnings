@@ -32,6 +32,5 @@ method to perform the same calculation.
 
 # Exercise 7.3
 
-Section 6.7 presents a recursive method that computes the
-factorial function. Write an iterative version of factorial.
+Write an iterative version of factorial.
 
