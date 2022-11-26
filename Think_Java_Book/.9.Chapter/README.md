@@ -178,3 +178,175 @@ fruit.substring(i, i + len).
 
 ### *The indexOf method*
 
+The indexOf method searches for a character in a string.
+
+```java
+String fruit = "banana";
+int index = fruit.indexOf('a');
+```
+
+This example finds the index of 'a' in the string. But the letter appears
+three times, so it's not obvious what indexOf should do. According to the
+documentation, it returns the index of the first appearance.
+
+To find subsequent appearances, you can use another version of indexOf, which
+takes a second argument that indicates where in the string to start looking.
+
+```java
+int index = fruit.indexOf('a', 2);
+```
+
+This code starts at index 2 (the first 'n') and finds the next 'a', which is
+at index 3. If the letter happens to appear at the starting index, the starting
+index is the answer. So fruit.indexOf('a', 5) returns 5.
+
+If the character does not appear in the string, indexOf returns -1. Since
+indexes cannot be negative, this value indicates the character was not found.
+
+You can also use indexOf to search for a substring, not just a single character.
+For example, the expression fruit.indexOf("nan") returns 2.
+
+### *String comparison*
+
+The right way to compare strings is with the equals method, like this:
+
+```java
+    if (name1.equals(name2)) {
+      System.out.println("The names are the same.");
+    }
+```
+
+If the strings difer, we can use compareTo to see which comes first in alpha-
+betical order:
+
+```java
+    int diff = name1.compareTo(name2);
+    if (diff == 0) {
+      System.out.println("The names are the same.");
+    } else if (diff < 0) {
+      System.out.println("name1 comes before name2.");
+    } else if (diff > 0) {
+      System.out.println("name2 comes before name1.");
+    }
+```
+
+The return value from compareTo is the diference between the first characters
+in the strings that difer. If the strings are equal, their diference is zero. If
+the first string (the one on which the method is invoked) comes first in the
+alphabet, the diference is negative. 
+
+Otherwise, the diference is positive.
+In the preceding code, compareTo returns positive 8, because the second letter
+of "Ada" comes before the second letter of "Alan" by 8 letters.
+
+Both equals and compareTo are case-sensitive. The uppercase letters come
+before the lowercase letters, so "Ada" comes before "ada".
+
+### *String formatting*
+
+```java
+    public static String timeString(int hour, int minute) {
+      String ampm;
+      if (hour < 12) {
+        ampm = "AM";
+      if (hour == 0) {
+        hour = 12; // midnight
+      }
+      } else {
+        ampm = "PM";
+        hour = hour - 12;
+      }
+    return String.format("%02d:%02d %s", hour, minute, ampm);
+    }
+```
+
+String.format takes the same arguments as System.out.printf: a for-
+mat specifer followed by a sequence of values. The main diference is that
+System.out.printf displays the result on the screen; String.format creates
+a new string, but does not display anything.
+
+In this example, the format specifer %02d means \two digit integer padded
+with zeros", so timeString(19, 5) returns the string "07:05 PM".
+
+### *Wrapper classes*
+
+For each primitive type, there is a corresponding class in the Java library,
+called a wrapper class. The wrapper class for char is called Character; for
+int it's called Integer. Other wrapper classes include Boolean, Long, and
+Double. They are in the java.lang package, so you can use them without
+importing them.
+
+Each wrapper class defnes constants MIN_VALUE and MAX_VALUE. For example,
+Integer.MIN_VALUE is -2147483648, and Integer.MAX_VALUE is 2147483647.
+Because these constants are available in wrapper classes, you don't have to
+remember them, and you don't have to include them in your programs.
+
+Wrapper classes provide methods for converting strings to other types. For
+example, Integer.parseInt converts a string to (you guessed it) an integer:
+
+```java
+  String str = "12345";
+  int num = Integer.parseInt(str);
+```
+
+The other wrapper classes provide similar methods, like Double.parseDouble
+and Boolean.parseBoolean. They also provide toString, which returns a
+string representation of a value:
+
+```java
+    int num = 12345;
+    String str = Integer.toString(num);
+```
+
+    The result is the string "12345".
+    
+### *Command-line arguments* 
+
+Let's write a program to find the largest value
+in a sequence of numbers. Rather than read the numbers from System.in,
+we'll pass them as command-line arguments. Here is a starting point:
+
+```java
+public class Max {
+  public static void main(String[] args) {
+    System.out.println(Arrays.toString(args));
+  }
+}
+```
+
+You can run this program from the command line by typing:
+
+    java Max
+    
+The output indicates that args is an empty array; that is, it has no elements:
+
+    []
+
+But if you provide additional values on the command line, they are passed as
+arguments to main. For example, if you run it like this:
+
+    java Max 10 -3 55 0 14
+
+The output is:
+
+    [10, -3, 55, 0, 14]
+    
+But remember that the elements of args are strings. To find the maximum
+number, we have to convert the arguments to integers.
+
+The following fragment uses an enhanced for loop to parse the arguments
+(using the Integer wrapper class) and find the largest value:
+
+```java
+    int max = Integer.MIN_VALUE;
+    for (String arg : args) {
+      int value = Integer.parseInt(arg);
+      if (value > max) {
+        max = value;
+      }
+    }
+    System.out.println("The max is " + max);
+```
+
+The initial value of max is the smallest (most negative) number an int can rep-
+resent, so any other value is greater. If args is empty, the result is MIN_VALUE.
