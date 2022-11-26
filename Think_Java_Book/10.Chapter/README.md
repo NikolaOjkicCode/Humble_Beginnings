@@ -172,4 +172,80 @@ apply methods to objects themselves using dot notation.
 ___
 ### *Aliasing*
 
+Remember that when you assign an object to a variable, you are assigning a
+reference to an object. It is possible to have multiple variables that refer to
+the same object. The state diagram in Figure 10.4 shows the result.
 
+```java
+Rectangle box1 = new Rectangle(0, 0, 100, 200);
+Rectangle box2 = box1;
+```
+
+Notice how box1 and box2 are aliases for the same object, so any changes
+that afect one variable also afect the other. This example adds 50 to all four
+sides of the rectangle, so it moves the corner up and to the left by 50, and it
+increases the height and width by 100:
+
+```java
+  System.out.println(box2.width);
+  box1.grow(50, 50);
+  System.out.println(box2.width);
+```
+
+The frst line displays 100, which is the width of the Rectangle referred to by
+box2. The second line invokes the grow method on box1, which stretches the
+Rectangle horizontally and vertically.
+
+When we make a change using box1, we see the change using box2. Thus, the
+value displayed by the third line is 200, the width of the expanded rectangle.
+
+___
+### *The null keyword*
+
+When you create an object variable, remember that you are storing a reference
+to an object. In Java, the keyword null is a special value that means no
+object". You can declare and initialize object variables this way:
+
+```java
+Point blank = null;
+```
+
+If you try to use a null value, either by accessing an attribute or invoking a
+method, Java throws a NullPointerException.
+
+```java
+Point blank = null;
+int x = blank.x; // NullPointerException
+blank.translate(50, 50); // NullPointerException
+```
+
+On the other hand, it is legal to pass a null reference as an argument or receive
+one as a return value. For example, null is often used to represent a special
+condition or indicate an error.
+
+___
+### *Garbage collection*
+
+What happens when no variables refer to an object?
+
+```java
+Point blank = new Point(3, 4);
+blank = null;
+```
+
+The frst line creates a new Point object and makes blank refer to it. The
+second line changes blank so that instead of referring to the object, it refers
+to nothing.
+
+If there are no references to an object, there is no way to access its attributes
+or invoke a method on it. From the programmer's view, it ceases to exist.
+However it's still present in the computer's memory, taking up space.
+
+As your program runs, the system automatically looks for stranded objects
+and reclaims them; then the space can be reused for new objects. This process
+is called garbage collection.
+
+You don't have to do anything to make garbage collection happen, and in
+general don't have to be aware of it. But in high-performance applications,
+you may notice a slight delay every now and then when Java reclaims space
+from discarded objects.
