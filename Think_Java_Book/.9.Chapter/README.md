@@ -1,6 +1,7 @@
 # Strings and things
 ## Important notes and pieces of code,from this chapter of the book!
 
+___
 ### *Characters*
 
 
@@ -58,6 +59,7 @@ This example uses a type cast to convert each integer (in the range) to the
 corresponding character.
 
 
+___
 ### *Strings are immutable*
 
 Strings provide methods, toUpperCase and toLowerCase, that convert from
@@ -91,6 +93,7 @@ This assignment is important;
 if you don't save the return value, invoking
 text.replace has no efect.
 
+___
 ### *String traversal*
 
 The following loop traverses the characters in fruit and displays them, one
@@ -150,6 +153,7 @@ the letters of s in reverse order. Each time through the loop, it creates a new
 string and assigns it to r. When the loop exits, r contains the letters from s
 in reverse order. So the result of reverse("banana") is "ananab".
 
+___
 ### *Substrings*
 
 The substring method returns a new string that copies letters from an exist-
@@ -176,6 +180,7 @@ ing substring this way simplifes some common operations. For example,
 to select a substring with length len, starting at index i, you could write
 fruit.substring(i, i + len).
 
+___
 ### *The indexOf method*
 
 The indexOf method searches for a character in a string.
@@ -206,6 +211,7 @@ indexes cannot be negative, this value indicates the character was not found.
 You can also use indexOf to search for a substring, not just a single character.
 For example, the expression fruit.indexOf("nan") returns 2.
 
+___
 ### *String comparison*
 
 The right way to compare strings is with the equals method, like this:
@@ -242,6 +248,7 @@ of "Ada" comes before the second letter of "Alan" by 8 letters.
 Both equals and compareTo are case-sensitive. The uppercase letters come
 before the lowercase letters, so "Ada" comes before "ada".
 
+___
 ### *String formatting*
 
 ```java
@@ -268,6 +275,7 @@ a new string, but does not display anything.
 In this example, the format specifer %02d means \two digit integer padded
 with zeros", so timeString(19, 5) returns the string "07:05 PM".
 
+___
 ### *Wrapper classes*
 
 For each primitive type, there is a corresponding class in the Java library,
@@ -299,7 +307,8 @@ string representation of a value:
 ```
 
     The result is the string "12345".
-    
+
+___
 ### *Command-line arguments* 
 
 Let's write a program to find the largest value
