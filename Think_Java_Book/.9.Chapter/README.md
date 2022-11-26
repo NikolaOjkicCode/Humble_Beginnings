@@ -151,3 +151,30 @@ string and assigns it to r. When the loop exits, r contains the letters from s
 in reverse order. So the result of reverse("banana") is "ananab".
 
 ### *Substrings*
+
+The substring method returns a new string that copies letters from an exist-
+ing string, starting at the given index.
+
+```java
+    fruit.substring(0) returns "banana"
+    fruit.substring(2) returns "nana"
+    fruit.substring(6) returns ""
+```
+
+Like most string methods, substring is overloaded. That is, there are other
+versions of substring that have diferent parameters. If it's invoked with two
+arguments, they are treated as a start and end index:
+
+```java
+    fruit.substring(0, 3) returns "ban"
+    fruit.substring(2, 5) returns "nan"
+    fruit.substring(6, 6) returns ""
+```
+
+Notice that the character indicated by the end index is not included. Defin-
+ing substring this way simplifes some common operations. For example,
+to select a substring with length len, starting at index i, you could write
+fruit.substring(i, i + len).
+
+### *The indexOf method*
+
