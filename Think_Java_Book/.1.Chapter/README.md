@@ -163,4 +163,13 @@ Organizations that do a lot of software development usually have strict guide-
 lines on how to format source code. For example, Google publishes its Java
 coding standards for use in open-source projects: [styleguide](https://google.github.io/styleguide/javaguide.html)
 
+___
+### *Debugging code*
+
+Programming and debugging should go hand in hand. Don't just write a bunch
+of code and then perform trial and error debugging until it all works. Instead,
+start with a program that does something and make small modifications, debugging 
+them as you go, until the program does what you want. That way
+you will always have a working program, and it will be easier to isolate errors.
+
 
