@@ -86,5 +86,35 @@ end, you can use print instead of println:
     In this example, the first statement does not add a newline, so the output
     appears on a single line as Goodbye, cruel world. Notice that there is a
     space at the end of the first string, which appears in the output.
-    
- 
+___
+### *Escape sequences*   
+
+It is possible to display multiple lines of output in just one line of code. You
+just have to tell Java where to put the line breaks.
+
+```java
+public class Hello {
+  public static void main(String[] args) {
+    System.out.print("Hello!\nHow are you doing?\n");
+  }
+}
+```
+
+The output is two lines, each ending with a newline character:
+
+    Hello!
+    How are you doing?
+
+The \n is an escape sequence, which is a sequence of characters that rep-
+resents a special character. The backslash allows you to \escape" the string's
+literal interpretation. Notice there is no space between \n and How. If you add
+a space there, there will be a space at the beginning of the second line.
+
+Another common use of escape sequences is to have quotation marks inside
+of strings. Since double quotes indicate the beginning and end of strings, you
+need to escape them with a backslash.
+
+```java
+  System.out.println("She said \"Hello!\" to me.");
+```
+
