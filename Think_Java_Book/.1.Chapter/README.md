@@ -64,3 +64,27 @@ the execution of the program, but they make it easier for other programmers
 
 ___
 ### *Displaying strings*
+
+Phrases that appear in quotation marks are called strings, because they con-
+tain a sequence of \characters" strung together. Characters can be letters,
+numbers, punctuation marks, symbols, spaces, tabs, etc.
+
+System.out.println appends a special character, called a newline, that
+moves to the beginning of the next line. If you don't want a newline at the
+end, you can use print instead of println:
+
+```java
+
+  public class Goodbye {
+    public static void main(String[] args) {
+      System.out.print("Goodbye, ");
+      System.out.println("cruel world");
+    }
+  }
+  
+```
+    In this example, the first statement does not add a newline, so the output
+    appears on a single line as Goodbye, cruel world. Notice that there is a
+    space at the end of the first string, which appears in the output.
+    
+ 
