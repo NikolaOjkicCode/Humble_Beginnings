@@ -105,8 +105,8 @@ The output is two lines, each ending with a newline character:
     Hello!
     How are you doing?
 
-The \n is an escape sequence, which is a sequence of characters that rep-
-resents a special character. The backslash allows you to \escape" the string's
+The \n is an escape sequence, which is a sequence of characters that represents a special character. 
+The backslash allows you to \escape" the string's
 literal interpretation. Notice there is no space between \n and How. If you add
 a space there, there will be a space at the beginning of the second line.
 
@@ -117,4 +117,34 @@ need to escape them with a backslash.
 ```java
   System.out.println("She said \"Hello!\" to me.");
 ```
+
+The result is:
+
+    She said "Hello!" to me.
+    
+___
+### *Formatting code*
+
+In Java programs, some spaces are required. For example, you need at least
+one space between words, so this program is not legal:
+
+```java
+publicclassGoodbye{
+  publicstaticvoidmain(String[] args) {
+    System.out.print("Goodbye, ");
+    System.out.println("cruel world");
+  }
+}
+```
+But most other spaces are optional. For example, this program is legal:
+
+```java
+public class Goodbye {
+public static void main(String[] args) {
+System.out.print("Goodbye, ");
+System.out.println("cruel world");
+}
+}
+```
+
 
