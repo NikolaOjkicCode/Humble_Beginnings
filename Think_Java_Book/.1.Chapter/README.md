@@ -147,4 +147,20 @@ System.out.println("cruel world");
 }
 ```
 
+The newlines are optional, too. So we could just write:
 
+```java
+public class Goodbye { public static void main(String[] args)
+{ System.out.print("Goodbye, "); System.out.println
+("cruel world");}}
+```
+
+It still works, but the program is getting harder and harder to read. Newlines
+and spaces are important for organizing your program visually, making it easier
+to understand the program and find errors when they occur.
+
+Organizations that do a lot of software development usually have strict guide-
+lines on how to format source code. For example, Google publishes its Java
+coding standards for use in open-source projects:
+
+[styleguide](https://google.github.io/styleguide/javaguide.html)
