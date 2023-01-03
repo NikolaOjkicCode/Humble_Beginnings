@@ -161,6 +161,6 @@ to understand the program and find errors when they occur.
 
 Organizations that do a lot of software development usually have strict guide-
 lines on how to format source code. For example, Google publishes its Java
-coding standards for use in open-source projects:
+coding standards for use in open-source projects: [styleguide](https://google.github.io/styleguide/javaguide.html)
 
-[styleguide](https://google.github.io/styleguide/javaguide.html)
+
