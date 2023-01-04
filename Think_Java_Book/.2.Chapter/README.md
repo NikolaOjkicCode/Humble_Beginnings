@@ -96,3 +96,5 @@ so they are no longer equal.
 
 Taken together, the variables in a program and their current values make up
 the program's state.
+
+<img src="https://marinegeo.github.io/2018-08-10-adding-images-markdown/" style="height: 100px; width:100px;"/>
