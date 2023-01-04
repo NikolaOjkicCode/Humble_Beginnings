@@ -48,5 +48,51 @@ These words include public, class, static, void, and int, which are used
 by the compiler to analyze the structure of the program.
 
 You can find the complete list of keywords at [docs.oracle.com](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html), 
-but you don't have to memorize them. Most programming editors provide \syntax highlighting",
+but you don't have to memorize them. Most programming editors provide "syntax highlighting",
 which makes diferent parts of the program appear in diferent colors.
+
+
+___
+### *Assignment*
+
+Now that we have declared variables, we want to use them to store values. We
+do that with an assignment statement.
+
+```java
+message = "Hello!"; // give message the value "Hello!"
+hour = 11; // assign the value 11 to hour
+minute = 59; // set minute to 59
+```
+
+As a general rule, a variable has to have the same type as the value you
+assign to it. For example, you cannot store a string in minute or an integer
+in message.
+
+Variables must be initialized (assigned for the first time) before they can
+be used. You can declare a variable and then assign a value later, as in the
+previous example. You can also declare and initialize on the same line:
+
+```java
+String message = "Hello!";
+int hour = 11;
+int minute = 59;
+```
+
+___
+### *State diagrams*
+
+Also, in mathematics, a statement of equality is true for all time. If a = b
+now, a is always equal to b. In Java, an assignment statement can make two
+variables equal, but they don't have to stay that way.
+
+```java
+int a = 5;
+int b = a; // a and b are now equal
+a = 3; // a and b are no longer equal
+```
+
+The third line changes the value of a, but it does not change the value of b,
+so they are no longer equal.
+
+Taken together, the variables in a program and their current values make up
+the program's state.
