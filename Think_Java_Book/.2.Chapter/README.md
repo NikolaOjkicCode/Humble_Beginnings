@@ -47,7 +47,6 @@ words, called keywords, that you are not allowed to use as variable names.
 These words include public, class, static, void, and int, which are used
 by the compiler to analyze the structure of the program.
 
-You can find the complete list of keywords at [docs.oracle.com](http://docs.oracle.com/)
-javase/tutorial/java/nutsandbolts/_keywords.html, but you don't have
-to memorize them. Most programming editors provide \syntax highlighting",
+You can find the complete list of keywords at [docs.oracle.com](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html), 
+but you don't have to memorize them. Most programming editors provide \syntax highlighting",
 which makes diferent parts of the program appear in diferent colors.
