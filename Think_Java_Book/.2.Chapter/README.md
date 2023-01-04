@@ -98,3 +98,115 @@ Taken together, the variables in a program and their current values make up
 the program's state.
 
 ![This is an image](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(3).png)
+
+Diagrams like this one that show the state of the program are called state
+diagrams. Each variable is represented with a box showing the name of the
+variable on the outside and the value inside. As the program runs, the state
+changes, so you should think of a state diagram as a snapshot of a particular
+point in time.
+
+___
+### *Printing variables*
+
+You can display the value of a variable using print or println. The fol-
+lowing statements declare a variable named firstLine, assign it the value
+"Hello, again!", and display that value.
+
+```java
+String firstLine = "Hello, again!";
+System.out.println(firstLine);
+```
+
+When we talk about displaying a variable, we generally mean the value of the
+variable. To display the name of a variable, you have to put it in quotes.
+
+```java
+System.out.print("The value of firstLine is ");
+System.out.println(firstLine);
+```
+
+For this example, the output is:
+
+      The value of firstLine is Hello, again!
+      
+Conveniently, the syntax for displaying a variable is the same regardless of its
+type. For example:
+
+```java
+int hour = 11;
+int minute = 59;
+System.out.print("The current time is ");
+System.out.print(hour);
+System.out.print(":");
+System.out.print(minute);
+System.out.println(".");
+```
+
+The output of this program is:
+
+      The current time is 11:59.
+
+To output multiple values on the same line, it's common to use several print
+statements followed by println at the end. But don't forget the println!
+On many computers, the output from print is stored without being displayed
+until println is run; then the entire line is displayed at once. If you omit the
+println, the program might display the stored output at unexpected times or
+even terminate without displaying anything.
+
+___
+### *Arithmetic operators*
+
+Operators are symbols that represent simple computations. For example, the
+addition operator is +, subtraction is -, multiplication is *, and division is /.
+
+The following program converts a time of day to minutes:
+
+```java
+int hour = 11;
+int minute = 59;
+System.out.print("Number of minutes since midnight: ");
+System.out.println(hour * 60 + minute);
+```
+
+In this program, hour * 60 + minute is an expression, which represents a
+single value to be computed. When the program runs, each variable is replaced
+by its current value, and then the operators are applied. The values operators
+work with are called operands.
+
+The result of the previous example is:
+
+      Number of minutes since midnight: 719
+      
+Addition, subtraction, and multiplication all do what you expect, but you
+might be surprised by division. For example, the following fragment tries to
+compute the fraction of an hour that has elapsed:
+
+```java
+System.out.print("Fraction of the hour that has passed: ");
+System.out.println(minute / 60);
+```
+The output is:
+
+      Fraction of the hour that has passed: 0
+
+This result often confuses people. The value of minute is 59, and 59 divided
+by 60 should be 0.98333, not 0. The problem is that Java performs "integer
+division" when the operands are integers. By design, integer division always
+rounds toward zero, even in cases like this one where the next integer is close.
+
+As an alternative, we can calculate a percentage rather than a fraction:
+
+```java
+System.out.print("Percent of the hour that has passed: ");
+System.out.println(minute * 100 / 60);
+```
+
+The new output is: 
+
+        Percent of the hour that has passed: 98
+        
+Again the result is rounded down, but at least now it's approximately correct.
+
+
+___
+### *Floating-point numbers*
