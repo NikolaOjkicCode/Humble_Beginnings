@@ -278,5 +278,10 @@ double y = 1.0 / 3.0; // correct
 ___
 ### *Rounding errors*
 
-
+Most 
+oating-point numbers are only approximately correct. Some numbers,
+like reasonably-sized integers, can be represented exactly. But repeating fractions, like 1=3,
+and irrational numbers, like pi, cannot. To represent these
+numbers, computers have to round off to the nearest 
+foating-point number.
                   
