@@ -14,10 +14,9 @@ intermediate step that is useful for checking that everything is working
 so far. Compile and run your program before moving on.
 4. Modify the program so that it displays the date in standard American
 format, for example: Thursday, July 16, 2015.
-5. Modify the program so it also displays the date in European format. The
-final output should be:
+5. Modify the program so it also displays the date in European format.
 
-
+The final output should be:
 
     American format:
     Thursday, July 16, 2015
