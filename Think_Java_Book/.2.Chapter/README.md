@@ -284,4 +284,25 @@ like reasonably-sized integers, can be represented exactly. But repeating fracti
 and irrational numbers, like pi, cannot. To represent these
 numbers, computers have to round off to the nearest 
 foating-point number.
-                  
+
+The diference between the number we want and the foating-point number
+we get is called rounding error. For example, the following two statements
+should be equivalent:
+
+```java
+System.out.println(0.1 * 10);
+System.out.println(0.1 + 0.1 + 0.1 + 0.1 + 0.1+ 0.1 + 0.1 + 0.1 + 0.1 + 0.1);
+```
+But on many machines, the output is:
+
+                  1.0
+                  0.9999999999999999
+
+The problem is that 0.1, which is a terminating fraction in decimal, is a repeating fraction in binary. So its 
+oating-point representation is only approximate.
+When we add up the approximations, the rounding errors accumulate.
+
+
+```java
+double balance = 123.45; // potential rounding error
+```
