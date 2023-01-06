@@ -303,6 +303,145 @@ oating-point representation is only approximate.
 When we add up the approximations, the rounding errors accumulate.
 
 
+For many applications, like computer graphics, encryption, statistical analysis, and multimedia rendering, 
+foating-point arithmetic has benefits that outweigh
+the costs. But if you need absolute precision, use integers instead. For example,
+consider a bank account with a balance of $123.45:
+
+
 ```java
 double balance = 123.45; // potential rounding error
 ```
+
+In this example, balances will become inaccurate over time as the variable is
+used in arithmetic operations like deposits and withdrawals. The result would
+be angry customers and potential lawsuits. You can avoid the problem by
+representing the balance as an integer:
+
+```java
+int balance = 12345; // total number of cents
+```
+
+This solution works as long as the number of cents doesn't exceed the largest
+integer, which is about 2 billion.
+
+___
+### *Operators for strings*
+
+In general, you cannot perform mathematical operations on strings, even if
+the strings look like numbers. The following expressions are illegal:
+
+"Hello" - 1 , "World" / 123 , "Hello" * "World"
+
+The + operator works with strings, but it might not do what you expect. For
+strings, the + operator performs concatenation, which means joining end-to-
+end. So "Hello, " + "World!" yields the string "Hello, World!".
+
+Since addition is defined for both numbers and strings, Java performs auto-
+matic conversions you may not expect:
+
+```java
+System.out.println(1 + 2 + "Hello");
+// the output is 3Hello
+System.out.println("Hello" + 1 + 2);
+// the output is Hello12
+```
+
+Java executes these operations from left to right. In the first line, 1 + 2 is
+3, and 3 + "Hello" is "3Hello". But in the second line, "Hello" + 1 is
+"Hello1", and "Hello1" + 2 is "Hello12".
+
+When more than one operator appears in an expression, they are evaluated
+according to order of operations. Generally speaking, Java evaluates oper-
+ators from left to right (as we saw in the previous section). But for numeric
+operators, Java follows mathematical conventions.
+
+Any time you want to override the order of operations (or you are not
+sure what it is) you can use parentheses. Expressions in parentheses are
+evaluated first, so (1 + 2) * 3 is 9. You can also use parentheses to
+make an expression easier to read, as in (minute * 100) / 60, even
+though it doesn't change the result.
+
+
+___
+### *Types of errors*
+
+Three kinds of errors can occur in a program: compile-time errors, run-time
+errors, and logic errors. It is useful to distinguish among them in order to
+track them down more quickly.
+
+Compile-time errors occur when you violate the syntax rules of the Java
+language. For example, parentheses and braces have to come in matching
+pairs. So (1 + 2) is legal, but 8) is not. In the latter case, the program
+cannot be compiled, and the compiler displays an error.
+
+But error messages are not always easy to understand. Sometimes the compiler
+reports the place in the program where the error was detected, not where it
+actually occurred. And sometimes the description of the problem is more
+confusing than helpful.
+
+For example, if you leave out the closing brace at the end of main (line 6), you
+might get a message like this:
+
+            File: Hello.java [line: 7]
+            Error: reached end of file while parsing
+
+There are two problems here. First, the error message is written from the com-
+piler's point of view, not yours. Parsing is the process of reading a program
+before translating; if the compiler gets to the end of the file while still parsing,
+that means something was omitted. But the compiler doesn't know what. It
+also doesn't know where. The compiler discovers the error at the end of the
+program (line 7), but the missing brace should be on the previous line.
+
+Error messages contain useful information, so you should make an efort to
+read and understand them. But don't take them too literally.
+
+The second type of error is a run-time error, so-called because it does not
+appear until after the program has started running. In Java, these errors
+occur while the interpreter is executing byte code and something goes wrong.
+These errors are also called "exceptions" because they usually indicate that
+something exceptional (and bad) has happened.
+
+When a run-time error occurs, the interpreter displays an error message that explains what
+happened and where.
+
+For example, if you accidentally divide by zero you will get a message like this:
+
+            Exception in thread "main" java.lang.ArithmeticException: / by zero
+            at Hello.main(Hello.java:5)
+            
+Some parts of this output are useful for debugging. The first line includes
+the name of the exception, java.lang.ArithmeticException, and a message
+that indicates more specifically what happened, / by zero. The next line
+shows the method where the error occurred; Hello.main indicates the method
+main in the class Hello. It also reports the file where the method is defined,
+Hello.java, and the line number where the error occurred, 5.
+
+The third type of error is the logic error. If your program has a logic error, it
+will compile and run without generating error messages, but it will not do the
+right thing. Instead, it will do exactly what you told it to do. For example,
+here is a version of the hello world program with a logic error:
+
+```java
+public class Hello {
+      public static void main(String[] args) {
+            System.out.println("Hello, ");
+            System.out.println("World!");
+      }
+}
+```
+
+This program compiles and runs just fine, but the output is:
+
+            Hello,
+            World!
+
+Assuming that we wanted the output on one line, this is not correct. The
+problem is that the first line uses println, when we probably meant to use
+print.
+
+Identifying logic errors can be hard because you have to work backwards,
+looking at the output of the program, trying to figure out why it is doing the
+wrong thing, and how to make it do the right thing. Usually the compiler and
+the interpreter can't help you, since they don't know what the right thing is.
+
