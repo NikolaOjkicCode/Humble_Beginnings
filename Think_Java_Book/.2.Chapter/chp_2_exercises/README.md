@@ -17,11 +17,9 @@ format, for example: Thursday, July 16, 2015.
 5. Modify the program so it also displays the date in European format. The
 final output should be:
 
+Hello
 
     American format:
-    
     Thursday, July 16, 2015
-    
     European format:
-    
     Thursday 16 July 2015
