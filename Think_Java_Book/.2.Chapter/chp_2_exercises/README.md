@@ -22,3 +22,18 @@ The final output should be:
     Thursday, July 16, 2015
     European format:
     Thursday 16 July 2015
+
+# Exercise 2.2
+
+1. Create a new program named Exercise2_2.java. Copy or type in something
+like the hello world program and make sure you can compile and run it.
+2. Create variables named hour, minute, and second. Assign values that are roughly the current
+time. Use a 24-hour clock so that at 2pm the value of hour is 14.
+3. Make the program calculate and display the number of seconds since
+midnight.
+4. Calculate and display the number of seconds remaining in the day.
+5. Calculate and display the percentage of the day that has passed. You
+might run into problems when computing percentages with integers, so consider using  foating-point.
+6. Change the values of hour, minute, and second to reect the current
+time. Then write code to compute the elapsed time since you started
+working on this exercise
