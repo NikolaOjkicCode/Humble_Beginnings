@@ -6,7 +6,7 @@ ___
 
 We have been using System.out.println for a while, but you might not
 have thought about what it means. System is a class that provides methods
-related to the \system" or environment where programs run. It also provides
+related to the "system" or environment where programs run. It also provides
 System.out, which is a special value that provides methods for displaying
 output, including println.
 
@@ -104,7 +104,7 @@ ___
 
 At this point, we have seen all of the elements that make up Java programs.
 
-![This is an image](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(4).png)
+![Image of all of the elements that make up Java programs](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(4).png)
 
 To review, a package is a collection of classes, which define methods. Methods
 contain statements, some of which contain expressions. Expressions are made
@@ -116,3 +116,69 @@ The standard edition of Java comes with several thousand classes you can
 import, which can be both exciting and intimidating. You can browse this
 library at [docs.oracle.com](http://docs.oracle.com/javase/8/docs/api/)
 Most of the Java library itself is written in Java.
+
+___
+### *Inches to centimeters*
+
+We'll use a Scanner to input a measurement
+in inches, convert to centimeters, and then display the results. The following
+lines declare the variables and create the Scanner:
+
+```java
+int inch;
+double cm;
+Scanner in = new Scanner(System.in);
+```
+
+The next step is to prompt the user for the input. We'll use print instead
+of println so they can enter the input on the same line as the prompt. And
+we'll use the Scanner method nextInt, which reads input from the keyboard
+and converts it to an integer:
+
+```java
+System.out.print("How many inches? ");
+inch = in.nextInt();
+```
+
+Next we multiply the number of inches by 2.54, since that's how many cen-
+timeters there are per inch, and display the results:
+
+```java
+cm = inch * 2.54;
+System.out.print(inch + " in = ");
+System.out.println(cm + " cm");
+```
+___
+### *Literals and constants*
+
+A value that appears in a program, like 2.54 (or " in ="), is called a literal.
+In general, there's nothing wrong with literals. But when numbers like 2.54
+appear in an expression with no explanation, they make code hard to read.
+And if the same value appears many times, and might have to change in the
+future, it makes code hard to maintain.
+
+Values like that are sometimes called magic numbers (with the implication
+that being "magic" is not a good thing). A good practice is to assign magic
+numbers to variables with meaningful names, like this:
+
+```java
+double cmPerInch = 2.54;
+cm = inch * cmPerInch;
+```
+
+This version is easier to read and less error-prone, but it still has a problem.
+Variables can vary, but the number of centimeters in an inch does not. Once we
+assign a value to cmPerInch, it should never change. Java provides a language
+feature that enforces that rule, the keyword final.
+
+```java
+final double CM_PER_INCH = 2.54;
+
+Declaring that a variable is final means that it cannot be reassigned once
+it has been initialized. If you try, the compiler reports an error. Variables
+declared as final are called constants. By convention, names for constants
+are all uppercase, with the underscore character (_) between words.
+```
+
+___
+### *Formatting output*
