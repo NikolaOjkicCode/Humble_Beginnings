@@ -104,3 +104,4 @@ ___
 
 At this point, we have seen all of the elements that make up Java programs.
 
+![This is an image](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(4).png)
