@@ -105,3 +105,14 @@ ___
 At this point, we have seen all of the elements that make up Java programs.
 
 ![This is an image](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(4).png)
+
+To review, a package is a collection of classes, which define methods. Methods
+contain statements, some of which contain expressions. Expressions are made
+up of tokens, which are the basic elements of a program, including numbers,
+variable names, operators, keywords, and punctuation like parentheses, braces
+and semicolons.
+
+The standard edition of Java comes with several thousand classes you can
+import, which can be both exciting and intimidating. You can browse this
+library at [docs.oracle.com](http://docs.oracle.com/javase/8/docs/api/)
+Most of the Java library itself is written in Java.
