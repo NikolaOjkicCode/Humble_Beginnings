@@ -182,3 +182,6 @@ are all uppercase, with the underscore character (_) between words.
 
 ___
 ### *Formatting output*
+
+When you output a double using print or println, it displays up to 16
+decimal places:
