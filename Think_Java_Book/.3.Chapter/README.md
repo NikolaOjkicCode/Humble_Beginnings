@@ -231,3 +231,177 @@ of the class.
 ___
 ### *Centimeters to inches*
 
+Now suppose we have a measurement in centimeters, and we want to round it
+off to the nearest inch. It is tempting to write:
+
+```java
+inch = cm / CM_PER_INCH; // syntax error
+```
+
+But the result is an error - you get something like, "Bad types in assignment:
+from double to int." The problem is that the value on the right is 
+foating-point, and the variable on the left is an integer.
+
+The simplest way to convert a foating-point value to an integer is to use a type
+cast, so called because it molds or "casts" a value from one type to another.
+The syntax for type casting is to put the name of the type in parentheses and
+use it as an operator.
+
+```java
+double pi = 3.14159;
+int x = (int) pi;
+```
+
+The (int) operator has the efect of converting what follows into an integer.
+In this example, x gets the value 3. Like integer division, converting to an
+integer always rounds toward zero, even if the fraction part is 0.999999 (or
+-0.999999). In other words, it simply throws away the fractional part.
+
+Type casting takes precedence over arithmetic operations. In this example,
+the value of pi gets converted to an integer before the multiplication. So the
+result is 60.0, not 62.0.
+
+```java
+double pi = 3.14159;
+double x = (int) pi * 20.0;
+```
+
+Keeping that in mind, here's how we can convert a measurement in centimeters
+to inches:
+
+```java
+inch = (int) (cm / CM_PER_INCH);
+System.out.printf("%f cm = %d in\n", cent, inch);
+```
+
+The parentheses after the cast operator require the division to happen before
+the type cast. And the result is rounded toward zero.
+
+
+___
+### *Modulus operator*
+
+Let's take the example one step further: suppose you have a measurement in
+inches and you want to convert to feet and inches. The goal is divide by 12
+(the number of inches in a foot) and keep the remainder.
+
+We have already seen the division operator (/), which computes the quotient
+of two numbers. If the numbers are integers, it performs integer division.
+Java also provides the modulus operator (%), which divides two numbers and
+computes the remainder.
+
+Using division and modulus, we can convert to feet and inches like this:
+
+```java
+quotient = 76 / 12; // division
+remainder = 76 % 12; // modulus
+```
+
+The first line yields 6. The second line, which is pronounced "76 mod 12",
+yields 4. So 76 inches is 6 feet, 4 inches.
+
+The modulus operator turns out to be surprisingly useful. For example, you
+can check whether one number is divisible by another: if x % y is zero, then
+x is divisible by y. You can use modulus to "extract" digits from a number:
+x % 10 yields the rightmost digit of x, and x % 100 yields the last two digits.
+Also, many encryption algorithms use the modulus operator extensively.
+
+___
+### *Putting it all together*
+
+At this point, you have seen enough Java to write useful programs that solve
+everyday problems. You can (1) import Java library classes, (2) create a
+Scanner, (3) get input from the keyboard, (4) format output with printf,
+and (5) divide and mod integers. Now we will put everything together in a
+complete program:
+
+```java
+import java.util.Scanner;
+
+/**
+* Converts centimeters to feet and inches.
+*/
+
+public class Convert {
+
+    public static void main(String[] args) {
+        double cm;
+        int feet, inches, remainder;
+        final double CM_PER_INCH = 2.54;
+        final int IN_PER_FOOT = 12;
+        Scanner in = new Scanner(System.in);
+        // prompt the user and get the value
+        System.out.print("Exactly how many cm? ");
+        cm = in.nextDouble();
+        // convert and output the result
+        inches = (int) (cm / CM_PER_INCH);
+        feet = inches / IN_PER_FOOT;
+        remainder = inches % IN_PER_FOOT;
+        System.out.printf("%.2f cm = %d ft, %d in\n",cm, feet, remainder);
+        }
+}
+```
+___
+### *The Scanner bug*
+
+Now that you've had some experience with Scanner, there is an unexpected
+behavior we want to warn you about. The following code fragment asks users
+for their name and age:
+
+```java
+System.out.print("What is your name? ");
+name = in.nextLine();
+System.out.print("What is your age? ");
+age = in.nextInt();
+System.out.printf("Hello %s, age %d\n", name, age);
+```
+
+The output might look something like this:
+
+        Hello Grace Hopper, age 45
+        
+When you read a String followed by an int, everything works just fine. But
+when you read an int followed by a String, something strange happens.
+
+```java
+System.out.print("What is your age? ");
+age = in.nextInt();
+System.out.print("What is your name? ");
+name = in.nextLine();
+System.out.printf("Hello %s, age %d\n", name, age);
+```
+
+The output:
+
+        What is your name? Hello , age 45
+        
+To understand what is happening, you have to understand that the Scanner
+doesn't see input as multiple lines, like we do. Instead, it gets a "stream of
+characters" : 
+
+![A stream of characters after nextInt is invoked.](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(6).png)
+
+The arrow indicates the next character to be read by Scanner. When you call
+nextInt, it reads characters until it gets to a non-digit.
+
+![A stream of characters after nextInt is invoked.](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(7).png)
+
+At this point, nextInt returns 45. The program then displays the prompt
+"What is your name? " and calls nextLine, which reads characters until it
+gets to a newline. But since the next character is already a newline, nextLine
+returns the empty string "".
+
+To solve this problem, you need an extra nextLine after nextInt:
+
+```java
+System.out.print("What is your age? ");
+age = in.nextInt();
+in.nextLine(); // read the newline
+System.out.print("What is your name? ");
+name = in.nextLine();
+System.out.printf("Hello %s, age %d\n", name, age);
+```
+
+This technique is common when reading int or double values that appear on
+their own line. First you read the number, and then you read the rest of the
+line, which is just a newline character.
