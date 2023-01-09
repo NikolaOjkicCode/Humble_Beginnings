@@ -185,3 +185,49 @@ ___
 
 When you output a double using print or println, it displays up to 16
 decimal places:
+
+That might be more than you want. System.out provides another method,
+called printf, that gives you more control of the format. The "f" in printf
+stands for "formatted". Here's an example:
+
+```java
+System.out.printf("Four thirds = %.3f", 4.0 / 3.0);
+```
+
+The first value in the parentheses is a format string that specifies how the
+output should be displayed. This format string contains ordinary text followed
+by a format specifier, which is a special sequence that starts with a percent
+sign. The format specifier %.3f indicates that the following value should be
+displayed as 
+oating-point, rounded to three decimal places. The result is:
+
+            Four thirds = 1.333
+            
+The format string can contain any number of format specifiers; here's an example with two:
+
+```java
+int inch = 100;
+double cm = inch * CM_PER_INCH;
+System.out.printf("%d in = %f cm\n", inch, cm);
+```
+
+The result is:
+
+            100 in = 254.000000 cm
+            
+Like print, printf does not append a newline. So format strings often end
+with a newline character.
+
+The format specifier %d displays integer values ("d" stands for :decimal"). The
+values are matched up with the format specifiers in order, so inch is displayed
+using %d, and cm is displayed using %f.
+
+For more details, refer to the documentation of java.util.Formatter. The easiest way to find
+documentation for Java classes is to do a web search for "Java" and the name
+of the class.
+
+![Example format specifiers](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(5).png)
+
+___
+### *Centimeters to inches*
+
