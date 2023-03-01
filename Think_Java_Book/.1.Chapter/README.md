@@ -65,8 +65,8 @@ the execution of the program, but they make it easier for other programmers
 ___
 ### *Displaying strings*
 
-Phrases that appear in quotation marks are called strings, because they con-
-tain a sequence of \characters" strung together. Characters can be letters,
+Phrases that appear in quotation marks are called strings, because they contain
+a sequence of "characters" strung together. Characters can be letters,
 numbers, punctuation marks, symbols, spaces, tabs, etc.
 
 System.out.println appends a special character, called a newline, that
