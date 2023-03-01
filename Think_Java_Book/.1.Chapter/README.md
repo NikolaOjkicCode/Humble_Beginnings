@@ -106,7 +106,7 @@ The output is two lines, each ending with a newline character:
     How are you doing?
 
 The \n is an escape sequence, which is a sequence of characters that represents a special character. 
-The backslash allows you to \escape" the string's
+The backslash allows you to "escape" the string's
 literal interpretation. Notice there is no space between \n and How. If you add
 a space there, there will be a space at the beginning of the second line.
 
@@ -159,8 +159,8 @@ It still works, but the program is getting harder and harder to read. Newlines
 and spaces are important for organizing your program visually, making it easier
 to understand the program and find errors when they occur.
 
-Organizations that do a lot of software development usually have strict guide-
-lines on how to format source code. For example, Google publishes its Java
+Organizations that do a lot of software development usually have strict guidelines 
+on how to format source code. For example, Google publishes its Java
 coding standards for use in open-source projects: [styleguide](https://google.github.io/styleguide/javaguide.html)
 
 ___
