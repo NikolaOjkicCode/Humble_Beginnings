@@ -8,7 +8,7 @@
      programming: The application of problem solving to creating executable
      computer programs.
      
-     computer science: The scienti c and practical approach to computation
+     computer science: The scientific and practical approach to computation
      and its applications.
      
      algorithm: A procedure or formula for solving a problem, with or without a
