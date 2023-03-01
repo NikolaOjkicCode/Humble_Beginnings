@@ -108,8 +108,8 @@ point in time.
 ___
 ### *Printing variables*
 
-You can display the value of a variable using print or println. The fol-
-lowing statements declare a variable named firstLine, assign it the value
+You can display the value of a variable using print or println. The following 
+statements declare a variable named firstLine, assign it the value
 "Hello, again!", and display that value.
 
 ```java
@@ -237,8 +237,7 @@ The output is:
 Although foating-point numbers are useful, they can be a source of confusion.
 For example, Java distinguishes the integer value 1 from the  foating-point
 value 1.0, even though they seem to be the same number. They belong to
-diferent data types, and strictly speaking, you are not allowed to make as-
-signments between types.
+diferent data types, and strictly speaking, you are not allowed to make assignments between types.
 
 The following is illegal because the variable on the left is an int and the value
 on the right is a double:
@@ -279,8 +278,8 @@ ___
 ### *Rounding errors*
 
 Most 
-oating-point numbers are only approximately correct. Some numbers,
-like reasonably-sized integers, can be represented exactly. But repeating fractions, like 1=3,
+floating-point numbers are only approximately correct. Some numbers,
+like reasonably-sized integers, can be represented exactly. But repeating fractions, like 1/3,
 and irrational numbers, like pi, cannot. To represent these
 numbers, computers have to round off to the nearest 
 foating-point number.
