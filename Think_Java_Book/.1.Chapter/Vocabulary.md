@@ -1,5 +1,5 @@
 # New vocabulary from this Chapter 
-     problem solving: The process of formulating a problem,  nding a solution,
+     problem solving: The process of formulating a problem,  finding a solution,
      and expressing the solution.
      
      program: A sequence of instructions that speci es how to perform tasks on
