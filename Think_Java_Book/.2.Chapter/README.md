@@ -333,8 +333,8 @@ the strings look like numbers. The following expressions are illegal:
 "Hello" - 1 , "World" / 123 , "Hello" * "World"
 
 The + operator works with strings, but it might not do what you expect. For
-strings, the + operator performs concatenation, which means joining end-to-
-end. So "Hello, " + "World!" yields the string "Hello, World!".
+strings, the + operator performs concatenation, which means joining end-to-end. 
+So "Hello, " + "World!" yields the string "Hello, World!".
 
 Since addition is defined for both numbers and strings, Java performs auto-
 matic conversions you may not expect:
@@ -351,8 +351,8 @@ Java executes these operations from left to right. In the first line, 1 + 2 is
 "Hello1", and "Hello1" + 2 is "Hello12".
 
 When more than one operator appears in an expression, they are evaluated
-according to order of operations. Generally speaking, Java evaluates oper-
-ators from left to right (as we saw in the previous section). But for numeric
+according to order of operations. Generally speaking, Java evaluates operators 
+from left to right (as we saw in the previous section). But for numeric
 operators, Java follows mathematical conventions.
 
 Any time you want to override the order of operations (or you are not
