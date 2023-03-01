@@ -2,7 +2,7 @@
      problem solving: The process of formulating a problem,  finding a solution,
      and expressing the solution.
      
-     program: A sequence of instructions that speci es how to perform tasks on
+     program: A sequence of instructions that specifies how to perform tasks on
      a computer.
      
      programming: The application of problem solving to creating executable
