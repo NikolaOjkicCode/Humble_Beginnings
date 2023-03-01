@@ -16,13 +16,13 @@
      
      bug: An error in a program.
      
-     debugging: The process of  nding and removing errors.
+     debugging: The process of finding and removing errors.
      
      high-level language: A programming language that is designed to be easy
      for humans to read and write.
      
      low-level language: A programming language that is designed to be easy
-     for a computer to run. Also called \machine language" or \assembly
+     for a computer to run. Also called "machine language" or "assembly
      language".
      
      portable: The ability of a program to run on more than one kind of computer.
@@ -37,14 +37,14 @@
      
      object code: The output of the compiler, after translating the program.
      
-     executable: Another name for object code that is ready to run on speci c
+     executable: Another name for object code that is ready to run on specific
      hardware.
      
      byte code: A special kind of object code used for Java programs. Byte code
      is similar to a low-level language, but it is portable like a high-level
      language.
      
-     statement: Part of a program that speci es one step of an algorithm.
+     statement: Part of a program that specifies one step of an algorithm.
      print statement: A statement that causes output to be displayed on the
      screen.
      
@@ -53,10 +53,9 @@
      is more to it.)
      
      comment: A part of a program that contains information about the program
-     but has no e ect when the program runs.
+     but has no efect when the program runs.
      
-     string: A sequence of characters; the primary data type for text.
-     12 Chapter 1 The way of the program
+     string: A sequence of characters
      
      newline: A special character signifying the end of a line of text. Also known
      as line ending, end of line (EOL), or line break.
