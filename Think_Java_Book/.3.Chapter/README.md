@@ -24,7 +24,7 @@ The result is:
     
 This output indicates that System.out is a PrintStream, which is defined in a
 package called java.io. A package is a collection of related classes; java.io
-contains classes for \I/O" which stands for input and output.
+contains classes for "I/O" which stands for input and output.
 
 The numbers and letters after the @ sign are the address of System.out,
 represented as a hexadecimal (base 16) number. The address of a value is
@@ -140,8 +140,8 @@ System.out.print("How many inches? ");
 inch = in.nextInt();
 ```
 
-Next we multiply the number of inches by 2.54, since that's how many cen-
-timeters there are per inch, and display the results:
+Next we multiply the number of inches by 2.54, since that's how many centimeters 
+there are per inch, and display the results:
 
 ```java
 cm = inch * 2.54;
@@ -151,7 +151,7 @@ System.out.println(cm + " cm");
 ___
 ### *Literals and constants*
 
-A value that appears in a program, like 2.54 (or " in ="), is called a literal.
+A value that appears in a program, like 2.54, is called a literal.
 In general, there's nothing wrong with literals. But when numbers like 2.54
 appear in an expression with no explanation, they make code hard to read.
 And if the same value appears many times, and might have to change in the
@@ -174,11 +174,13 @@ feature that enforces that rule, the keyword final.
 ```java
 final double CM_PER_INCH = 2.54;
 
+```
+
 Declaring that a variable is final means that it cannot be reassigned once
 it has been initialized. If you try, the compiler reports an error. Variables
 declared as final are called constants. By convention, names for constants
 are all uppercase, with the underscore character (_) between words.
-```
+
 
 ___
 ### *Formatting output*
