@@ -163,6 +163,152 @@ it gets back to main.
 ___
 ### *Parameters and arguments*
 
+When you use a method, you provide the arguments. When you write a
+method, you name the parameters. The parameter list indicates what arguments are required. 
+The following class shows an example:
+
+```java
+public class PrintTwice {
+    public static void printTwice(String s) {
+        System.out.println(s);
+        System.out.println(s);
+    }
+    
+    public static void main(String[] args) {
+    
+        printTwice("Don't make me say this twice!");
+    }
+}
+```
+
+printTwice has a parameter named s with type String. When we invoke
+printTwice, we have to provide an argument with type String.
+
+Before the method executes, the argument gets assigned to the parameter.
+In this example, the argument "Don't make me say this twice!" gets assigned to the parameter s.
+
+This process is called parameter passing because the value gets passed from
+outside the method to the inside. An argument can be any kind of expression,
+so if you have a String variable, you can use it as an argument:
+
+```java
+String argument = "Never say never.";
+printTwice(argument);
+```
+
+The value you provide as an argument must have the same type as the parameter.
+
+Sometimes Java can convert an argument from one type to another auto-
+matically. For example, Math.sqrt requires a double, but if you invoke
+Math.sqrt(25), the integer value 25 is automatically converted to the 
+floating-point value 25.0. But in the case of printTwice, Java can't (or won't) convert
+the integer 17 to a String.
+
+Parameters and other variables only exist inside their own methods. Inside
+main, there is no such thing as s. If you try to use it there, you'll get a compiler
+error. Similarly, inside printTwice there is no such thing as argument. That
+variable belongs to main.
+
+Because variables only exist inside the methods where they are defined, they
+are often called local variables.
+
+___
+### *Multiple parameters*
+
+Here is an example of a method that takes two parameters:
+
+```java
+public static void printTime(int hour, int minute) {
+    System.out.print(hour);
+    System.out.print(":");
+    System.out.println(minute);
+}
+```
+
+In the parameter list, it may be tempting to write:
+
+```java
+public static void printTime(int hour, minute) {
+...
+
+```
+But that format (without the second int) is only legal for variable declarations.
+In parameter lists, you need to specify the type of each variable separately.
+
+To invoke this method, we have to provide two integers as arguments:
+
+```java
+int hour = 11;
+int minute = 59;
+printTime(hour, minute);
+```
+
+A common error is to declare the types of the arguments, like this:
+
+```java
+int hour = 11;
+int minute = 59;
+printTime(int hour, int minute); // syntax error
+```
+
+That's a syntax error; the compiler sees int hour and int minute as variable
+declarations, not expressions. You wouldn't declare the types of the arguments
+if they were simply integers:
+
+```java
+printTime(int 11, int 59); // syntax error
+```
+
+___
+### *Stack diagrams*
+
+Pulling together the code fragments from the previous section, here is a complete class definition:
+
+```java
+public class PrintTime {
+    public static void printTime(int hour, int minute) {
+        System.out.print(hour);
+        System.out.print(":");
+        System.out.println(minute);
+    }
+    
+    public static void main(String[] args) {
+        int hour = 11;
+        int minute = 59;
+        printTime(hour, minute);
+    }
+}
+```
+
+printTime has two parameters, named hour and minute. And main has two
+variables, also named hour and minute. Although they have the same names,
+these variables are not the same. hour in printTime and hour in main refer
+to diferent storage locations, and they can have diferent values.
+
+For example, you could invoke printTime like this:
+
+```java
+int hour = 11;
+int minute = 59;
+printTime(hour + 1, 0);
+```
+
+Before the method is invoked, Java evaluates the arguments; in this example,
+the results are 12 and 0. Then it assigns those values to the parameters. Inside
+printTime, the value of hour is 12, not 11, and the value of minute is 0, not
+59. Furthermore, if printTime modifies one of its parameters, that change
+has no efct on the variables in main.
+
+One way to keep track of everything is to draw a stack diagram, which is
+a state diagram that shows method invocations. For each
+method there is a box called a frame that contains the method's parameters and variables. 
+The name of the method appears outside the frame; the
+variables and parameters appear inside.
+
+As with state diagrams, stack diagrams show variables and methods at a particular 
+point in time. Figure 4.1 is a stack diagram at the beginning of the
+printTime method.
+
 
 
 
