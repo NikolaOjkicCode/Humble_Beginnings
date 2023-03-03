@@ -13,3 +13,31 @@ multiple methods.
      ping is invoked.
   
   3. What happens if you invoke baffle(); at the end of the ping method?
+
+Code: 
+
+```java
+public static void zoop() {
+  baffle();
+  System.out.print("You wugga ");
+  baffle();
+}
+
+public static void main(String[] args) {
+  System.out.print("No, I ");
+  zoop();
+  System.out.print("I ");
+  baffle();
+}
+
+public static void baffle() {
+  System.out.print("wug");
+  ping();
+}
+
+public static void ping() {
+  System.out.println(".");
+}
+```
+
+# Exercise 4.2
