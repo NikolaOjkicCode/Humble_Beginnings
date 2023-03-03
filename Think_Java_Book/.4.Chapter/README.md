@@ -309,7 +309,7 @@ As with state diagrams, stack diagrams show variables and methods at a particula
 point in time. Figure 4.1 is a stack diagram at the beginning of the
 printTime method.
 
-
+![stack diagrams](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(8).png)
 
 
 
