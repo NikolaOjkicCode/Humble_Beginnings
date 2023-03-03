@@ -53,7 +53,7 @@ to write and invoke methods that take parameters.
 
 The purpose of this exercise is to take code from a previous
 exercise and encapsulate it in a method that takes parameters. You should
-start with a working solution to Exercise 2.2.
+start with a working solution to Exercise 2.1.
 
 1. Write a method called printAmerican that takes the day, date, month
 and year as parameters and that displays them in American format.
