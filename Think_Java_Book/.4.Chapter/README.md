@@ -311,7 +311,74 @@ printTime method.
 
 ![stack diagrams](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(8).png)
 
+___
+### *Reading documentation*
 
+One of the nice things about Java is that it comes with an extensive library
+of classes and methods. But before you use them, you might have to read the
+documentation. And sometimes that's not easy.
 
+As an example, let's look at the documentation for Scanner.
+You can Find it by doing a web search for "Java Scanner".
+Figure 4.2 shows a screenshot of the page.
+
+![Java Scanner screenshot](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Think_Java_Book/Miscellaneous/Screenshot%20(9).png)
+
+Documentation for other classes uses a similar format. The frst line is the
+package that contains the class, such as java.util.
+The second line is thename of the class. The "Implemented Interfaces" section lists some of the things a Scanner can do
+
+The next section of the documentation is a narrative that explains the purpose
+of the class and includes examples of how to use it.
+A good way to get started with a new class is to paste the
+examples into a test filee and see if you can compile and run them.
+
+After the narrative, code examples, and some other details, you will find the
+following tables:
+
+        Constructor summary: Ways of creating, or "constructing", a Scanner.
+        
+        Method summary: The list of methods that Scanner provides.
+        
+        Constructor detail: More information about how to create a Scanner.
+        
+        Method detail: More information about each method.
+
+As an example, here is the summary information for nextInt:
+
+    public int nextInt()
+    Scans the next token of the input as an int.
+
+The first line is the method's signature, which specifies the name of the
+method, its parameters (none), and what type it returns (int). The next line
+is a short description of what it does.
+
+The "Method detail" explains more:
+
+    public int nextInt()
+    Scans the next token of the input as an int.
+    An invocation of this method of the form nextInt() behaves in
+    exactly the same way as the invocation nextInt(radix), where
+    radix is the default radix of this scanner.
+    Returns:
+    the int scanned from the input
+    Throws:
+    InputMismatchException - if the next token does not match
+    the Integer regular expression, or is out of range
+    NoSuchElementException - if input is exhausted
+    IllegalStateException - if this scanner is closed
+    
+The "Returns" section describes the result when the method succeeds. In
+contrast, the "Throws" section describes possible errors and their resulting
+exceptions. Exceptions are said to be "thrown", like a referee throwing a 
+flag, or like a toddler throwing a fit.
+
+It might take you some time to get comfortable reading documentation and
+learning which parts to ignore. But it's worth the efort. Knowing what's
+available in the library helps you avoid reinventing the wheel. And a little bit
+of documentation can save you a lot of debugging.
+
+___
+### *Writing documentation*
 
 
