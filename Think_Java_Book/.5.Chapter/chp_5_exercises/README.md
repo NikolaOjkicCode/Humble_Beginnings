@@ -127,3 +127,19 @@ end of the program. If a line is executed more than once, it might end
 up with more than one number next to it.
 3. What is the value of the parameter blimp when baffle gets invoked?
 4. What is the output of this program?
+
+# Exercise 5.6
+
+Now that we have conditional statements, we can get back to
+the "Guess My Number" game from Exercise 3.3.
+
+You should already have a program that chooses a random number, prompts
+the user to guess it, and displays the diference between the guess and the
+chosen number.
+
+Adding a small amount of code at a time, and testing as you go, modify the
+program so it tells the user whether the guess is too high or too low, and then
+prompts the user for another guess.
+
+The program should continue until the user gets it right. Hint: Use two
+methods, and make one of them recursive.
