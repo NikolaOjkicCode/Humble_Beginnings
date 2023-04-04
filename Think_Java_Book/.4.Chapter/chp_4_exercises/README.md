@@ -2,7 +2,7 @@
 
 The point of this exercise is to practice reading code and to
 make sure that you understand the 
-ow of execution through a program with
+flow of execution through a program with
 multiple methods.
 
   1. What is the output of the following program? Be precise about where
