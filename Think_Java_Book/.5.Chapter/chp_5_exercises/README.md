@@ -86,3 +86,44 @@ Write a program that displays the entire lyrics of "99 Bottles of Beer". Your
 program should include a recursive method that does the hard part, but you
 might want to write additional methods to separate other parts of the program.
 As you develop your code, test it with a small number of verses, like 3.
+
+# Exercise 5.5
+
+This exercise reviews the  flow of execution through a program
+with multiple methods. Read the following code and answer the questions.
+
+Code:
+
+```java
+public static void baffle(String blimp) {
+		System.out.println(blimp);
+		zippo("ping", -5);
+	}
+	
+	public static void zippo(String quince, int flag) {
+		if (flag < 0) {
+			
+			System.out.println(quince + " zoop");
+		} else {
+			
+			System.out.println("ik"); 
+			baffle(quince);
+			System.out.println("boo-wa-ha-ha");
+		
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		zippo("rattle", 13);
+		
+	}
+```
+
+1. Write the number 1 next to the first line of code in this program that
+will execute.
+2. Write the number 2 next to the second line of code, and so on until the
+end of the program. If a line is executed more than once, it might end
+up with more than one number next to it.
+3. What is the value of the parameter blimp when baffle gets invoked?
+4. What is the output of this program?
