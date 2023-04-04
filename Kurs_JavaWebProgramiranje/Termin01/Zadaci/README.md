@@ -2,12 +2,7 @@
 
 Ispisati na konzoli sledeći tekst (primena konstrukcije za uvlačenje teksta)
 
-A. 
-B. 
-...B.1. 
-   ...B.1.1. 
-...B.2. 
-C.
+![zadatak1](https://github.com/NikolaOjkicCode/Humble_Beginnings/blob/main/Kurs_JavaWebProgramiranje/Miscellaneous/Screenshot%20(14).png)
 
 # Zadatak 2
 
