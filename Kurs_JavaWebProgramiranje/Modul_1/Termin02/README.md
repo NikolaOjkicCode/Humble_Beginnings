@@ -1,1 +1,1 @@
-# Primeri i zadaci iz TERMINA 2
+# Teorija za ovaj Termin
