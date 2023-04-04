@@ -56,3 +56,15 @@ Po gregorijanskom kalendaru prestupne godine određjuju se na slećedi način:
 
 # Zadatak 7
 
+Napisati program koji ispisuje sve brojeve između 1 i 30 koji su deljivi sa 5.
+
+# Zadatak 8
+
+Napisati program u kojem su data dva broja x i y (vrednosti su predefinisane u kodu). 
+Zavisno od vrednosti u promenljivoj „operacija“, program izvršava sledeće operacije:
+
+-	operacija ima vrednost „min“: program ispisuje manji od dva broja
+-	operacija ima vrednost „max“: program ispisuje veći od dva broja
+-	operacija ima vrednost „swap“: program međusobno zamenjuje vrednosti iz promenljivih x i y (vrednost x se ubacuje u y, a vrednost y u x)
+-	operacija ima vrednost „equals“: program ispisuje 0 ako su brojevi jednaki, 1 ako je x veći, a -1 ako je y veći
+
