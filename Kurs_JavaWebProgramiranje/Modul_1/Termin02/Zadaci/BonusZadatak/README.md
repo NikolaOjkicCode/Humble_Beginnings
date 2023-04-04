@@ -1,4 +1,4 @@
-#Bonus Zadatak 1
+# Bonus Zadatak 1
 
 
 (Dodatni zadatak )Napraviti projekat Hotel kao Java Projekat. Desnim klikom na src folder
