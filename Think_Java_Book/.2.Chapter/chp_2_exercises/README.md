@@ -37,3 +37,5 @@ might run into problems when computing percentages with integers, so consider us
 6. Change the values of hour, minute, and second to reect the current
 time. Then write code to compute the elapsed time since you started
 working on this exercise
+
+HINT : Percentage formula = (Value/Total value) × 100
